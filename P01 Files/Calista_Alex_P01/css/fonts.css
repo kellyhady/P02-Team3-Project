@@ -1,0 +1,31 @@
+/*
+FONTS - Échanger
+*/
+
+@font-face {
+	font-family: 'Polarity';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/polarity-regular.otf');
+}
+
+@font-face {
+	font-family: 'Polarity';
+	font-weight: normal;
+	font-style: italic;
+	src: url('../fonts/polarity-italic.otf');
+}
+
+@font-face {
+	font-family: 'Polarity';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/polarity-bold.otf');
+}
+
+@font-face {
+	font-family: 'Polarity';
+	font-weight: bold;
+	font-style: italic;
+	src: url('../fonts/polarity-bolditalic.otf');
+}

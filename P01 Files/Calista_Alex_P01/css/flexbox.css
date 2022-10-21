@@ -1,0 +1,319 @@
+/*
+FLEXBOX STYLING - Échanger
+*/
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+/* CONTAINER BLOCKS */
+/* Set the .container class to display as a flexbox, and to wrap flexbox items responsively. */
+.container {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+}
+/* Set the .block class to grow as needed, as well as to have a basis of 15em. */
+.container .block {
+	-webkit-flex: 1 1 15em;
+	-ms-flex: 1 1 15em;
+	flex: 1 1 15em;
+	padding: 0 1rem;
+	padding: 1rem 2rem 2rem 2rem;
+	margin: 2rem 2rem 2rem 2rem;
+	background-color: #FFF;
+	border: 2px solid #030303;
+}
+.container .block img {
+	display: flex;
+	-webkit-flex: 3 1 auto;
+	-ms-flex: 3 1 auto;
+	flex: 3 1 auto;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -15px;
+}
+.container .block h2 {
+	padding-bottom: 2rem;
+	margin-bottom: 2rem;
+	border-bottom: 2px solid #030303;
+}
+/* END OF CONTAINER BLOCKS */
+
+/* TABLE BLOCKS */
+.container .table-block {
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	margin-top: 10px;
+	background-color: transparent;
+	/*
+	border: 1px solid black;
+	*/
+}
+.container .table-block .group {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.container .table-block img {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	margin: 5px;
+}
+.container .table-block h3 {
+	margin: 0px;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	font-size: 125%;
+	font-style: normal;
+	border-bottom: 2px solid #030303;
+}
+.container .table-block h4 {
+	display: block;
+	font-size: 105%;
+}
+/* END OF TABLE BLOCKS */
+
+/* BREAKPOINT 1 */
+@media (max-width:1670px) {
+	/* TEXT INPUT FIELD */
+	.container .table-block input.floating-field {
+		padding: 10px 10px 10px 5px;
+		font-size: 100%;
+		font-weight: 600;
+		display: block;
+		width: 650px;
+		border: none;
+		border-bottom: 2px solid #030303;
+		background-color: transparent;
+	}
+	.container .table-block .bar {
+		position: relative;
+		display: block;
+		width: 650px;
+	}
+	/* END OF TEXT INPUT FIELD */
+}
+
+/* BREAKPOINT 2 */
+@media (max-width:1300px) {
+	/* HERO */
+	h1.hero {
+		font-size: 750%;
+		line-height: 110%;
+	}
+	/* END OF HERO */
+
+	/* TEXT INPUT FIELD */
+	.container .table-block input.floating-field {
+		padding: 10px 10px 10px 5px;
+		font-size: 100%;
+		font-weight: 600;
+		display: block;
+		width: 500px;
+		border: none;
+		border-bottom: 2px solid #030303;
+		background-color: transparent;
+	}
+	.container .table-block .bar {
+		position: relative;
+		display: block;
+		width: 500px;
+	}
+	/* END OF TEXT INPUT FIELD */
+}
+
+/* BREAKPOINT 3 */
+@media (max-width:1140px) {
+	/* NAVIGATION BAR */
+	.nav {
+		display: flex;
+		padding-bottom: 65px;
+	}
+	a.button {
+		display:block;
+	}
+	/* END OF NAVIGATION BAR */
+
+	/* HERO */
+	h1.hero {
+		font-size: 750%;
+		line-height: 110%;
+	}
+	/* END OF HERO */
+
+	/* CONTAINERS */
+	.container .block img {
+		-webkit-flex: 3 1 auto;
+		-ms-flex: 3 1 auto;
+		flex: 3 1 auto;
+	}
+	/* END OF CONTAINERS */
+}
+
+/* BREAKPOINT 4 */
+@media (max-width:900px) {
+	/* TEXT INPUT FIELD */
+	.container .table-block input.floating-field {
+		padding: 10px 10px 10px 5px;
+		font-size: 100%;
+		font-weight: 600;
+		display: block;
+		width: 400px;
+		border: none;
+		border-bottom: 2px solid #030303;
+		background-color: transparent;
+	}
+	.container .table-block .bar {
+		position: relative;
+		display: block;
+		width: 400px;
+	}
+	/* END OF TEXT INPUT FIELD */
+}
+
+/* BREAKPOINT 5 */
+@media (max-width:800px) {
+	/* NAVIGATION BAR */
+	.nav {
+		display: flex;
+		padding-bottom: 65px;
+	}
+	.nav ul {
+		display: inline;
+		font-size: 110%;
+		line-height: 250%;
+	}
+	a.button {
+		margin-top: 20px;
+		line-height: 120%;
+	}
+	/* END OF NAVIGATION BAR */
+
+	/* HERO */
+	h1.hero {
+		font-size: 600%;
+		line-height: 110%;
+	}
+	p.hero {
+		font-size: 130%;
+	}
+	/* END OF HERO */
+
+	/* CONTAINERS */
+	.container .block img {
+		max-width: 150px;
+		-webkit-flex: 3 1 auto;
+		-ms-flex: 3 1 auto;
+		flex: 3 1 auto;
+	}
+	.container .table-block h4 {
+		display: block;
+		font-size: 100%;
+	}
+	.container .table-block {
+		-webkit-flex: 1 1 5em;
+		-ms-flex: 1 1 5em;
+		flex: 1 1 5em;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-color: transparent;
+	}
+	/* END OF CONTAINERS */
+
+	/* TEXT STYLING FOR CHECKOUT CART */
+	/* ROW TITLES */
+	h2.number {
+		text-align: left;
+	}
+	h3.entry {
+		text-align: left;
+	}
+	h3.price {
+		text-align: left;
+	}
+	h3.quantity {
+		text-align: left;
+	}
+	h3.total {
+		text-align: left;
+	}
+	/* END OF ROW TITLES */
+
+	/* COLUMN CONTENTS */
+	h4.entry {
+		text-align: left;
+	}
+	p.price {
+		text-align: left;
+	}
+	p.quantity {
+		text-align: left;
+	}
+	p.total {
+		text-align: left;
+	}
+	/* END OF COLUMN CONTENTS */
+	/* END OF TEXT STYLING FOR CHECKOUT CART */
+
+	/* TEXT INPUT FIELD */
+	input.floating-field {
+		padding: 10px 10px 10px 5px;
+		font-size: 100%;
+		font-weight: 600;
+		display: block;
+		max-width: 150px;
+		border: none;
+		border-bottom: 2px solid #030303;
+		background-color: transparent;
+	}
+	.bar {
+		position: relative;
+		display: block;
+		max-width: 150px;
+	}
+	.container .table-block input.floating-field {
+		padding: 10px 10px 10px 5px;
+		font-size: 100%;
+		font-weight: 600;
+		display: block;
+		max-width: 150px;
+		border: none;
+		border-bottom: 2px solid #030303;
+		background-color: transparent;
+	}
+	.container .table-block .bar {
+		position: relative;
+		display: block;
+		max-width: 150px;
+	}
+	/* END OF TEXT INPUT FIELD */
+
+	/* ADD-TO-CART BUTTON */
+	.add-to-cart-button {
+		font-weight: 600;
+		padding: 1rem 1rem 1rem 1rem;
+		color: #FFF;
+		background-color: #030303;
+		border-style: hidden;
+		text-decoration: none;
+		transition-property: background-color;
+		transition-duration: 0.5s;
+	}
+	/* END OF ADD-TO-CART BUTTON */
+
+	/* FOOTER */
+	.footer-menu ul {
+		display: flex;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	/* END OF FOOTER */
+}
