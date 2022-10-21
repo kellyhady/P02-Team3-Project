@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1rem 5rem;
-  background: #E0F600;
+  background: #FFF;
   color: #030303;
   font-size:110%;
   font-weight: 600;
@@ -32,7 +32,7 @@ header {
 .brand {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 305px;
+  margin-right: 330px;
   font-family: 'Polarity', serif;
   font-size: 250%;
   font-weight: 700;
@@ -68,7 +68,7 @@ a.button {
 }
 
 a.button:hover, a.button:focus {
-  background-color: #1F09FF;
+  background-color: #FA5A20;
 }
 /* END OF NAVIGATION BAR: https://www.cssscript.com/show-hide-navbar-scroll-down-up/ */
 
@@ -91,7 +91,7 @@ body {
 
 /* HERO */
 .hero-image-index {
-  background-image: url("../img/background-resized.jpg");
+  background-image: url("../img/background.jpg");
   height: 1000px;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,7 +100,7 @@ body {
 }
 
 .hero-image-product-listing {
-  background-image: url("../img/background-product-listing.jpg");
+  background-image: url("../img/background.jpg");
   height: 1000px;
   background-position: center;
   background-repeat: no-repeat;
@@ -109,7 +109,7 @@ body {
 }
 
 .hero-image-checkout-cart {
-  background-image: url("../img/background-checkout-cart.jpg");
+  background-image: url("../img/background.jpg");
   height: 1000px;
   background-position: center;
   background-repeat: no-repeat;
@@ -123,7 +123,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #FFF;
+  color: #000;
 }
 
 h1.hero {
@@ -158,10 +158,10 @@ h1 {
 }
 
 h2 {
-  color: #1F09FF;
+  color: #FA5A20;
   font-family: 'Polarity', serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -279,7 +279,7 @@ a.in-text {
 }
 
 a.in-text {
-  background: linear-gradient(to right, #E0F600, #E0F600), linear-gradient(to right, #1F09FF, #1F09FF);
+  background: linear-gradient(to right, #FDD037, #FDD037), linear-gradient(to right, #FA5A20, #FA5A20);
   background-size: 100% 8px, 0 8px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -291,7 +291,7 @@ a.in-text:hover {
 }
 
 a.in-text:focus {
-  background: linear-gradient(to right, #E0F600, #E0F600), linear-gradient(to right, #1F09FF, #1F09FF);
+  background: linear-gradient(to right, #FA5A20, #FA5A20), linear-gradient(to right, #FA5A20, #FA5A20);
   background-size: 100% 8px, 0 8px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -376,7 +376,7 @@ input.floating-field:focus ~ label.floating-label, input.floating-field:valid ~ 
   content: '';
   height: 5px;
   width: 0;
-  background: #E0F600;
+  background: #FA5A20;
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
@@ -415,7 +415,7 @@ input.radio-button:hover {
 }
 
 input.radio-button:checked {
-  background: #E0F600;
+  background: #FA5A20;
   border: 3px solid #030303;
   transition: 0.2s all linear;
 }
@@ -435,7 +435,7 @@ input.radio-button:checked {
 }
 
 .buttons:hover, .buttons:focus {
-  background-color: #1F09FF;
+  background-color: #FA5A20;
 }
 /* END OF BUTTON */
 
@@ -456,7 +456,7 @@ input.radio-button:checked {
 }
 
 .add-to-cart-button:hover, .add-to-cart-button:focus {
-  background-color: #1F09FF;
+  background-color: #FA5A20;
 }
 /* END OF ADD-TO-CART BUTTON */
 
@@ -469,7 +469,7 @@ footer {
   height: auto;
   width: 100vw;
   padding: 100px;
-  color: #E0F600;
+  color: #FA5A20;
 }
 
 .footer-content {
@@ -507,7 +507,7 @@ footer {
 
 .socials a {
   text-decoration: none;
-  background-color: #1F09FF;
+  background-color: #FA5A20;
   color: #FFF;
   padding: 10px;
 }
