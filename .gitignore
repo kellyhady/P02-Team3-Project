@@ -3,6 +3,4 @@
 
 # Ada Library Information
 *.ali
-#exclude .jpeg and  .jpg .DS_Store
-*.jpeg
-*.jpg
+#exclude .DS_Store
