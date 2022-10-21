@@ -1,0 +1,302 @@
+body {
+  font-family: "Karla",sans-serif;
+  padding: 10px;
+  background: #ffff;
+}
+
+*,*::after, *::before  {
+  box-sizing: border-box;
+}
+
+/* Code source: https://www.youtube.com/watch?v=GxwHXxumdQk&t=392s | */
+
+.header{
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: #ffff;
+}
+
+.inner_header{
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin : 0 auto;
+  background-color: #ffff;
+}
+
+.logo_container{
+  height:150px;
+  display: table;
+  float:left;
+}
+
+/* Code source: https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog | */
+
+.navigation{
+  overflow: hidden;
+  float: right;
+  background-color: #ffff;
+  height: 100%
+}
+
+.navigation2{
+  overflow: hidden;
+  float: left;
+  background-color: #ffff;
+  height: 100%
+}
+.navigation2 a{
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  float: left;
+  text-decoration: none;
+  color:black;
+  font-family: "Karla";
+  background-color: #ffff;
+  padding: 0px 20px;
+}
+
+.navigation a{
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  float: left;
+  text-decoration: none;
+  color:black;
+  font-family: "Karla";
+  background-color: #ffff;
+  padding: 0px 20px;
+}
+
+.navigation a:hover {
+  background-color: #C41515;
+  color: white;
+}
+
+.navigation2 a:hover {
+  background-color: #C41515;
+  color: white;
+}
+
+.title_box{
+  height:200px;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Karla-Bold";
+  background-color: #fff9ed;
+}
+
+.section_box{
+  height: 50px;
+  padding: 1px 10px 1px 10px;
+  text-align: left;
+  vertical-align: middle;
+  font-family: "Karla-Bold";
+  background-color: #C41515;
+  color: #fff9ed;
+}
+
+.page_column {
+  text-align: left;
+  align-items: center;
+  width: 100%;
+}
+
+.sub-color{
+  color: #C41515;
+}
+
+.sub-color2{
+  color: #535353;
+}
+
+.page_column p{
+  display: inline-block;
+  padding: 0px 20px 20px 0px;
+}
+
+.card {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.inTextLink{
+  display: block;
+	color: white;
+	background-color: rgb(250,100,75);
+	font-size: 1.5rem;
+	padding: 0.25rem 0.5rem;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.button-nav {
+  font-family: "Karla";
+  display: inline-block;
+  padding: 0.5rem;
+  color: black;
+  background-color: #ffff;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #64AAA9;
+}
+
+.label_border{
+  border-radius: 0px;
+  border-color: #C41515;
+}
+
+.button{
+  font-family: "Karla";
+  background-color: #64AAA9;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 14px;
+  margin 5px 5px 5px;
+  cursor: pointer;
+}
+
+.button:hover, .button:focus {
+  background-color: #185c5b;
+}
+
+form {
+  border: 1px solid #c6c7cc;
+  border-radius: 5px;
+  font-family: 14px/1.4 "Karla";
+  overflow: hidden;
+  width: 240px;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border-radius: 5px;
+  font: 14px/1.4 "Karla", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+/* Code source: https://stackoverflow.com/questions/17175563/how-to-set-paragraph-width-automatically-in-css | */
+
+.container{
+  text-align: left;
+}
+.container p{
+  display: inline-block;
+  padding: 0px 600px 20px 0px;
+}
+
+@media screen and (max-width: 1400px) {
+  .container p {
+    padding: 0px 100px 20px 0px;
+  }
+}
+
+/* Code source: https://learn.shayhowe.com/html-css/building-forms/ | */
+
+.account-info {
+  padding: 20px 20px 0 20px;
+}
+
+.account-info label {
+  color: #395870;
+  display: block;
+  font-weight: bold;
+  border-radius: 0px;
+  border-color: #64AAA9;
+  margin-bottom: 20px;
+}
+
+.account-info input {
+  background: #fff;
+  border: 0px solid #64AAA9;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+  color: #636466;
+  padding: 6px;
+  margin-top: 6px;
+  width: 95%;
+}
+.account-action {
+  background: #fff;
+  border-top: 1px solid #c6c7cc;
+  padding: 20px;
+}
+
+.account-action label {
+  color: #7c7c80;
+  font-size: 12px;
+  float: left;
+  border-radius: 0px;
+  border-color: #64AAA9;
+  margin: 10px 0 0 20px;
+}
+
+.flex-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 20px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.product_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  margin-top: 25px;
+  background-color: #f1f1f1;
+}
+
+/*  */
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

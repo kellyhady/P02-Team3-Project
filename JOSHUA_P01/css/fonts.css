@@ -1,0 +1,22 @@
+/* Code source: 03_-_Grids_-_Completed/fonts.css | */
+
+@font-face {
+	font-family: 'Hammersmith';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/HammersmithOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Karla';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Karla-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Karla-Bold';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Karla-Bold.ttf') format('truetype');
+}
