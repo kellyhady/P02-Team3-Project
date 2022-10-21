@@ -128,7 +128,8 @@ body {
 
 h1.hero {
   font-size: 725%;
-  line-height: 0.45;
+
+  line-height: 0.85;
 }
 
 p.hero {
