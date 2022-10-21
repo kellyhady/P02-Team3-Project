@@ -1,0 +1,66 @@
+/* Navigation Links style */
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+.nav:hover {
+  color: #e94f37;
+  transition: all 200ms ease-in-out;
+}
+.nav {
+  text-decoration: none;
+  color: #068d9d;
+}
+
+.nav:after {
+  content: "";
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom left;
+  transition: all 250ms ease-in-out;
+}
+
+nav {
+  order: 1;
+}
+
+.cta {
+  order: 2;
+}
+
+.cta-btn {
+  float: left;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 10px;
+  padding: 1em 3em;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #f5f5f5;
+  background: linear-gradient(rgb(171, 215, 69) 11.1%, rgb(125, 175, 10) 95.3%);
+  border: 0;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  box-shadow: 3px 2px 30px 1px rgba(125, 125, 125, 0.24);
+}
+
+.cta-btn:active {
+  transform: scale(0.98);
+  background: linear-gradient(rgb(137, 192, 8) 11.1%, rgb(69, 144, 0) 95.3%);
+  transition: all 200ms;
+}

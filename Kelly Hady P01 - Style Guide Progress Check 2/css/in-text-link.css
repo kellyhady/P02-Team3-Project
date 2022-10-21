@@ -1,0 +1,17 @@
+/*In-text Link States*/
+
+#in-text-link {
+  text-decoration: none;
+}
+#in-text-link {
+  display: inline-block;
+  position: relative;
+}
+
+#in-text-link:focus {
+  color: #0087ca;
+}
+
+#in-text-link:hover {
+  color: #e94f37;
+}

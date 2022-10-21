@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>P01 - Progress Check 1 Style Guide</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/navigation.css" rel="stylesheet" />
+    <link href="css/products.css" rel="stylesheet" />
+    <link href="css/select-genre.css" rel="stylesheet" />
+    <link href="css/search-bar.css" rel="stylesheet" />
+    <link href="css/buttons.css" rel="stylesheet" />
+    <link href="css/payment.css" rel="stylesheet" />
+    <link href="css/checkout.css" rel="stylesheet" />
+    <link href="css/in-text-link.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="img/project-logo.png"
+        onclick="location.href='#about'"
+      />
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html" class="nav">Style Guide Sheet</a>
+          </li>
+          <li>
+            <a href="#text_elements" class="nav">Text Elements</a>
+          </li>
+          <li>
+            <a href="#combined_elements" class="nav">Combined Elements</a>
+          </li>
+          <li>
+            <a href="#productlisting.html" class="nav">Our Library</a>
+          </li>
+          <li>
+            <a href="checkout.html" class="nav">Checkout</a>
+          </li>
+          <li>
+            <a href="#citations" class="nav">Citations</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="element">
+      <form>
+        <fieldset class="search-form">
+          <label for="search"
+            >What book are you looking for?
+            <input type="text" id="search" name="search" class="search-form" />
+          </label>
+          <button type="search-btn">Search for a Book</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!---Product Listing-->
+    <section class="element">
+      <code
+        >This code shows the product listing. The items are nested into a
+        primary, master div.
+      </code>
+      <!-- <h3 id="headings">Product/Service Listing</h3> -->
+
+      <div class="book-item">
+        <div class="book-info-1">
+          <h3 class="book-title">Emma</h3>
+          <h4 class="author">Paperback, English | Jane Austen</h4>
+
+          <img
+            src="https://images-na.ssl-images-amazon.com/images/I/A1dZA3BmyKL.jpg"
+            class="bookCover"
+          />
+        </div>
+        <div class="book-info-2">
+          <p class="copies-available">5 of 5 copies available</p>
+          <p>
+            Jane Austen's Emma (1816) tells the story of the coming of age of
+            Emma Woodhouse, "handsome, clever, and rich," who had lived nearly
+            twenty-one years in the world with very little to distress or vex
+            her.
+            <br />Typical for the novel's time, Emma's transition to womanhood
+            is accomplished through courtship-- both of those around her and,
+            ultimately, her own. As in other Austen works, education and
+            courtship go hand in hand, and Emma's process of learning to
+            relinquish the power of having her own way is also a process of
+            falling in love. <br />However, in Emma, this classic plot is both
+            complicated by and reflective of a collection of contemporary
+            issues, assumptions, and anxieties that highlight just how
+            "political" even the most conventional of courtship plots can be.
+          </p>
+        </div>
+        <div>
+          <button type="borrow-button" onclick="alert('Added to your cart!')">
+            Borrow
+          </button>
+          <button type="listen-sample-button">Listen to a Sample</button>
+        </div>
+      </div>
+
+      <div class="book-item">
+        <div class="book-info-1">
+          <h3 class="book-title">Sense and Sensibility</h3>
+          <h4 class="author">Paperback, English | Jane Austen</h4>
+
+          <img
+            src="https://m.media-amazon.com/images/I/81DACtsTtvL.jpg"
+            class="bookCover"
+          />
+        </div>
+        <div class="book-info-2">
+          <p class="copies-available">3 of 7 copies available</p>
+          <p>
+            Jane Austen's debut novel is a brilliant tragicomedy of flirtation
+            and folly in which two sisters who represent "sense" and
+            "sensibility," or restraint and emotionalism, experience love and
+            heartbreak in their own separate ways. The impetuous Marianne falls
+            passionately in love with the dashing John Willoughby and makes no
+            secret of her affections.
+            <br />Meanwhile, Elinor and the mild-mannered Edward Ferras feel a
+            mutual attraction, yet neither has the directness to acknowledge it.
+            When it is revealed that Willoughby is in fact an unscrupulous
+            fortune hunter and that Edward is bound by a previous commitment to
+            another woman, each sister's romantic hopes are dashed. As they bear
+            their grief in their different ways, Marianne learns from Elinor's
+            quiet restraint, while Elinor learns the value of Marianne's candid
+            expression. In the end, both sisters are happily settled, having
+            each developed a more balanced approach to life and love.
+          </p>
+        </div>
+        <div>
+          <button type="borrow-button" onclick="alert('Added to your cart!')">
+            Borrow
+          </button>
+          <button type="listen-sample-button">Listen to a Sample</button>
+        </div>
+      </div>
+
+      <div class="book-item">
+        <div class="book-info-1">
+          <h3 class="book-title">Pride and Prejudice</h3>
+          <h4 class="author">Paperback, English | Jane Austen</h4>
+
+          <img
+            src="https://images.penguinrandomhouse.com/cover/9780451479914"
+            class="bookCover"
+          />
+        </div>
+        <div class="book-info-2">
+          <p class="copies-available">1 of 10 copies available</p>
+          <p>
+            Pride and Prejudice is one of the most beloved novels of all time.
+            Elizabeth Bennett, the book's poverty-bound heroine has charmed
+            readers with her wit and sincerity since the book was first
+            published in 1813. Its hero, the handsome and wealthy Mr. Darcy,
+            infuriates Elizabeth — and women readers around the world — with his
+            rude arrogance, but all fall in love with him anyway.
+          </p>
+        </div>
+        <div>
+          <button type="borrow-button" onclick="alert('Added to your cart!')">
+            Borrow
+          </button>
+          <button type="listen-sample-button">Listen to a Sample</button>
+        </div>
+      </div>
+
+      <div class="book-item">
+        <div class="book-info-1">
+          <h3 class="book-title">The Viscount Who Loved Me</h3>
+          <h4 class="author">Paperback, English | Julia Quinn</h4>
+
+          <img
+            src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1379594308l/861326.jpg"
+            class="bookCover"
+          />
+        </div>
+        <div class="book-info-2">
+          <p class="copies-available">2 of 8 copies available</p>
+          <p>
+            1814 promises to be another eventful season, but not, This Author
+            believes, for Anthony Bridgerton, London's most elusive bachelor,
+            who has shown no indication that he plans to marry. And in all
+            truth, why should he? When it comes to playing the consummate rake,
+            nobody does it better ...
+            <br />—Lady Whistledown's Society Papers, April 1814 <br />But this
+            time the gossip columnists have it wrong. Anthony Bridgerton hasn't
+            just decided to marry—he's even chosen a wife! The only obstacle is
+            his intended's older sister, Kate Sheffield—the most meddlesome
+            woman ever to grace a London ballroom. The spirited schemer is
+            driving Anthony mad with her determination to stop the betrothal,
+            but when he closes his eyes at night, Kate's the woman haunting his
+            increasingly erotic dreams ... <br />Contrary to popular belief,
+            Kate is quite sure that reformed rakes do not make the best
+            husbands—and Anthony Bridgerton is the most wicked rogue of them
+            all. Kate's determined to protect her sister—but she fears her own
+            heart is vulnerable. And when Anthony's lips touch hers, she's
+            suddenly afraid she might not be able to resist the reprehensible
+            rake herself <br />Bridgerton is on Netflix now!
+          </p>
+        </div>
+        <div>
+          <button type="borrow-button" onclick="alert('Added to your cart!')">
+            Borrow
+          </button>
+          <button type="listen-sample-button">Listen to a Sample</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

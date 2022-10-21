@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>P01 - Progress Check 1 Style Guide</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/navigation.css" rel="stylesheet" />
+    <link href="css/products.css" rel="stylesheet" />
+    <link href="css/select-genre.css" rel="stylesheet" />
+    <link href="css/search-bar.css" rel="stylesheet" />
+    <link href="css/buttons.css" rel="stylesheet" />
+    <link href="css/payment.css" rel="stylesheet" />
+    <link href="css/checkout.css" rel="stylesheet" />
+    <link href="css/in-text-link.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="img/project-logo.png"
+        onclick="location.href='#about'"
+      />
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html" class="nav">Style Guide Sheet</a>
+          </li>
+          <li>
+            <a href="#text_elements" class="nav">Text Elements</a>
+          </li>
+          <li>
+            <a href="#combined_elements" class="nav">Combined Elements</a>
+          </li>
+          <li>
+            <a href="productlisting.html" class="nav">Our Library</a>
+          </li>
+          <li>
+            <a href="checkout.html" class="nav">Checkout</a>
+          </li>
+          <li>
+            <a href="#citations" class="nav">Citations</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="element">
+      <!---Checkout Section-->
+      <code>This code shows the sample checkout items. </code>
+      <h2>Checkout</h2>
+      <h3>You are borrowing:</h3>
+      <div class="checkout-item">
+        <h3>Emma</h3>
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/I/A1dZA3BmyKL.jpg"
+          class="bookCover"
+        />
+        <p>Paperback, English | Jane Austen</p>
+        <h4>Available. Expected delivery to Canada in 1-2 business days.</h4>
+      </div>
+      <div class="checkout-item">
+        <h3>Pride and Prejudice</h3>
+        <img
+          src="https://images.penguinrandomhouse.com/cover/9780451479914"
+          class="bookCover"
+        />
+        <p>Paperback, English | Jane Austen</p>
+        <h4>Available. Expected delivery to Canada in 1-2 business days.</h4>
+      </div>
+    </section>
+    <section class="element">
+      <fieldset class="payment-form">
+        <h3>Would you like to donate?</h3>
+        <section class="payment-selection">
+          <h4>Donate with:</h4>
+          <input
+            type="radio"
+            id="visa"
+            name="payment_method"
+            class="payment-selection"
+          />
+          <label for="visa">Visa</label><br />
+          <input
+            type="radio"
+            id="mastercard"
+            name="payment_method"
+            class="payment-selection"
+          />
+          <label for="visa">Mastercard</label><br />
+          <input
+            type="radio"
+            id="paypal"
+            name="payment_method"
+            class="payment-selection"
+          />
+          <label for="visa">Paypal</label><br />
+          <input
+            type="radio"
+            id="e-Wallet"
+            name="payment_method"
+            class="payment-selection"
+          />
+          <label for="visa">e-Wallet</label>
+          <br />
+
+          <label for="discountCode">Donation amount ($CAD): </label>
+          <input type="text" id="discountCode" name="discount_Code" />
+
+          <br />
+        </section>
+        <button type="borrow-button" onclick="alert('Thank you, dear reader!')">
+          Click to Donate
+        </button>
+        <h4>Every donation is appreciated :)</h4>
+      </fieldset>
+    </section>
+  </body>
+</html>

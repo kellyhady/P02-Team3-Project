@@ -1,0 +1,105 @@
+/* Payment/Donation form Style */
+
+fieldset.payment-form {
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 20px 20px;
+  font-size: 14px;
+  background-color: #f5f5f5;
+}
+
+h3.payment-form {
+  color: #068d9d;
+}
+
+input.payment-selection[type="radio"] {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  transform: translateY(0.5em);
+  transition: all 250ms ease;
+}
+
+#discountCode {
+  margin: 2em;
+  font-weight: 600;
+}
+
+#discountCode[type="text"] {
+  cursor: pointer;
+  font-weight: 100;
+  margin-left: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+  background: white;
+  box-shadow: none;
+  border: 0;
+}
+
+#discountCode[type="text"]:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  margin-left: 5px;
+  color: black;
+  font-weight: 200;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: all 200ms ease-in-out;
+}
+
+#discountCode[type="text"]:focus {
+  caret-color: #e94f37;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  margin-left: 5px;
+  color: black;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: all 200ms ease-in-out;
+}
+
+button[type="pay-btn"] {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  padding: 1em 3em;
+  cursor: pointer;
+  color: #f5f5f5;
+  background: linear-gradient(rgb(255, 67, 5) 11.1%, rgb(217, 55, 0) 95.3%);
+  border: 0;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+button[type="pay-btn"]:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 30px 1px rgba(125, 125, 125, 0.24);
+}
+
+button[type="checkout-btn"] {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  padding: 1em 3em;
+  cursor: pointer;
+  color: #f5f5f5;
+  background: linear-gradient(rgb(255, 67, 5) 11.1%, rgb(217, 55, 0) 95.3%);
+  border: 0;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+button[type="checkout-btn"]:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 30px 1px rgba(125, 125, 125, 0.24);
+}

@@ -1,0 +1,57 @@
+/*---Search Bar Style---*/
+input.search-form {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
+  background: white;
+  color: black;
+  font-weight: 100;
+}
+/*Drop shadow source: 
+https://getcssscan.com/css-box-shadow-examples
+Style no. 22
+Also in citations*/
+
+input.search-form:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  margin-left: 5px;
+  color: black;
+  font-weight: 200;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: all 200ms ease-in-out;
+}
+
+input.search-form:focus {
+  caret-color: #e94f37;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  margin-left: 5px;
+  color: black;
+  font-weight: 200;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: all 200ms ease-in-out;
+}
+
+fieldset.search-form-action {
+  border: 0;
+}
+
+.search-form {
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  padding: 20px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  background-color: #f5f5f5;
+}

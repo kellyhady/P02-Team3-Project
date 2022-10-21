@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>P01 - Progress Check 1 Style Guide</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/navigation.css" rel="stylesheet" />
+    <link href="css/select-genre.css" rel="stylesheet" />
+    <link href="css/products.css" rel="stylesheet" />
+    <link href="css/search-bar.css" rel="stylesheet" />
+    <link href="css/buttons.css" rel="stylesheet" />
+    <link href="css/payment.css" rel="stylesheet" />
+    <link href="css/checkout.css" rel="stylesheet" />
+    <link href="css/in-text-link.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="img/project-logo.png"
+        onclick="location.href='#about'"
+      />
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href="index.html" class="nav">Style Guide Sheet</a>
+          </li>
+          <li>
+            <a href="#text_elements" class="nav">Text Elements</a>
+          </li>
+          <li>
+            <a href="#combined_elements" class="nav">Combined Elements</a>
+          </li>
+          <li>
+            <a href="productlisting.html" class="nav">Our Library</a>
+          </li>
+          <li>
+            <a href="checkout.html" class="nav">Checkout</a>
+          </li>
+          <li>
+            <a href="#citations" class="nav">Citations</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>P01 - Style Guide</h1>
+
+    <!--Interactive Elements section-->
+    <section class="primary-element">
+      <section id="interactive_elements">
+        <h2>Interactive Elements</h2>
+
+        <section class="element">
+          <code>
+            Sample in-text link that leads to a website. Has hover state when
+            you hover over it.
+          </code>
+          <h3 id="headings">In-text Link</h3>
+          <a href="https://vpl.bibliocommons.com" id="in-text-link"
+            >Borrow Items</a
+          >
+        </section>
+
+        <!--Default Buttons styling section-->
+
+        <section class="element">
+          <h3 id="headings">Navigation Link</h3>
+          <nav>
+            <a href="#interactive_elements" class="nav">Navigation</a>
+          </nav>
+        </section>
+
+        <!--Submit/Reset buttons section-->
+        <section class="element">
+          <code>
+            This code shows the buttons that will be used in the site. The
+            buttons have specific types that are linked to their distinct
+            styles.
+          </code>
+          <h3 id="headings">Submit/Reset buttons</h3>
+          <button type="submit-button">Submit</button>
+          <button type="reset-button">Reset</button>
+        </section>
+
+        <!--Text input field section-->
+        <section class="element">
+          <code>
+            This code shows an input text field with a label. This is a sample
+            search bar where users can put book titles.Next to it is a sample
+            Search button with hover and active states.
+          </code>
+          <h3 id="headings">Text Input Field with Label</h3>
+          <form>
+            <fieldset class="search-form">
+              <label for="search"
+                >What book are you looking for?
+                <input
+                  type="text"
+                  id="search"
+                  name="search"
+                  class="search-form"
+                />
+              </label>
+              <button type="search-btn">Search for a Book</button>
+            </fieldset>
+          </form>
+        </section>
+
+        <!--Radio button section-->
+        <section class="element">
+          <code>
+            This code shows radio buttons with input field and label. Users can
+            select an item from the list by clicking on the radio button.
+          </code>
+          <h3 id="headings">Radio Button with Input Field and Label</h3>
+          <fieldset class="select-genre">
+            <p class="select-genre">Select the genre you're interested in:</p>
+            <input type="radio" id="thriller" name="fav_genre" />
+            <label for="thriller">Thriller</label><br />
+            <input type="radio" id="romance" name="fav_genre" />
+            <label for="romance">Romance</label><br />
+            <input type="radio" id="fantasy" name="fav_genre" />
+            <label for="fantasy">Fantasy</label><br />
+          </fieldset>
+        </section>
+
+        <!---Image as a link section-->
+        <section class="element">
+          <code> This code shows an image as a link. </code>
+          <h3 id="headings">Image as a Link</h3>
+          <a
+            href="https://www.theedgesusu.co.uk/culture/2017/09/19/the-edge-reviews-the-classics-emma-by-jane-austen/"
+            target="_blank"
+          >
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/I/A1dZA3BmyKL.jpg"
+              alt="Emma by Jane Austen - Penguin Threads edition"
+              class="bookCover"
+            />
+          </a>
+        </section>
+      </section>
+    </section>
+
+    <!--Text Elements section-->
+    <section class="primary-element">
+      <section id="text_elements">
+        <h2>Text Elements</h2>
+
+        <!--Headings section-->
+        <section class="element">
+          <code>
+            This code shows the different heading styles from h2, h3, h4, to p.
+          </code>
+          <h3>Headings</h3>
+
+          <section id="headings-variation">
+            <p class="label">Header</p>
+            <h2>The Library</h2>
+            <p class="label">Subheader 1</p>
+            <h3>Emma</h3>
+            <p class="label">Subheader 2</p>
+            <h4>Borrow a book</h4>
+            <p class="label">Body Paragraph</p>
+            <p>Available for Borrowing</p>
+          </section>
+        </section>
+
+        <!--Paragraph section-->
+        <section class="element">
+          <code> This code shows a sample paragraph. </code>
+          <h3 id="headings">Paragraph</h3>
+          <p>
+            Review of Emma: The story is told from the point of view of Emma: a
+            headstrong, upper-class, twenty-year-old woman living with her
+            father in the small village of Highbury. Determined not to marry,
+            she enjoys spending her time matchmaking her friends, albeit
+            mistakenly. I immediately warmed to Emma’s character; her constant
+            witty remarks and satirical sense of humour (as well as her arguably
+            feminist approach to matrimony) made the book much more enjoyable,
+            even making me laugh out loud more than once.
+          </p>
+        </section>
+
+        <!--Numbered list section-->
+        <section class="element">
+          <code> This code shows a sample of a numbered (ordered) list. </code>
+          <h3 id="headings">Numbered List</h3>
+          <ol>
+            <li>Thriller</li>
+            <li>Romance</li>
+            <li>Romance-Comedy</li>
+            <li>Fantasy</li>
+          </ol>
+        </section>
+      </section>
+    </section>
+
+    <!--Combined Elements section-->
+
+    <section class="elements" id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <!--Main Navigation-->
+      <section class="element">
+        <code>
+          This code shows the navigation style that can be found at the top of
+          the page. It is a combination of links nested in unordered lists
+          without decoration. Some of the links will take the user to its own
+          page. Each list item has a link element that will take users to either
+          to another page or a specific section of the home page.
+        </code>
+        <h3 id="headings">Main Navigation</h3>
+        <nav>
+          <ul class="nav-links" id="nav-links">
+            <li>
+              <a href="index.html" class="nav">Style Guide Sheet</a>
+            </li>
+            <li>
+              <a href="#text_elements" a href="index.html" class="nav"
+                >Text Elements</a
+              >
+            </li>
+            <li>
+              <a href="#combined_elements" a href="index.html" class="nav"
+                >Combined Elements</a
+              >
+            </li>
+            <li>
+              <a href="productlisting.html" class="nav">Our Library</a>
+            </li>
+            <li>
+              <a href="checkout.html" class="nav">Checkout</a>
+            </li>
+            <li>
+              <a href="#citations" class="nav">Citations</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!---Product Listing-->
+      <section class="element">
+        <code>
+          Please click on the button to view the product listing style elements
+        </code>
+        <h3 id="headings">Product Listing</h3>
+        <button
+          type="borrow-button"
+          onclick="location.href='productlisting.html'"
+          onclick="window.location.href='productlisting.html'"
+        >
+          Go to Product Listing Element
+        </button>
+      </section>
+
+      <!---Payment/Donation Form section-->
+      <section class="element">
+        <code>
+          This code shows the donation form. The radio buttons function so users
+          can select a donation method. Users can also put a dollar amount in
+          the input box and click on the button to finish donating.
+        </code>
+        <fieldset class="payment-form">
+          <h3 class="payment-form">Payment (Donation) Form</h3>
+
+          <section class="payment-selection">
+            <h4>Donate with:</h4>
+            <input
+              type="radio"
+              id="visa"
+              name="payment_method"
+              class="payment-selection"
+            />
+            <label for="visa">Visa</label><br />
+            <input
+              type="radio"
+              id="mastercard"
+              name="payment_method"
+              class="payment-selection"
+            />
+            <label for="visa">Mastercard</label><br />
+            <input
+              type="radio"
+              id="paypal"
+              name="payment_method"
+              class="payment-selection"
+            />
+            <label for="visa">Paypal</label><br />
+            <input
+              type="radio"
+              id="e-Wallet"
+              name="payment_method"
+              class="payment-selection"
+            />
+            <label for="visa">e-Wallet</label>
+            <br />
+
+            <label for="discountCode">Donation amount ($CAD): </label>
+            <input type="text" id="discountCode" name="discount_Code" />
+
+            <br />
+          </section>
+          <button
+            type="borrow-button"
+            onclick="alert('Thank you, dear reader!')"
+          >
+            Click to Donate
+          </button>
+          <h4>Every donation is appreciated :)</h4>
+        </fieldset>
+      </section>
+
+      <section class="element">
+        <!---Checkout Section-->
+        <code
+          >Please click on the button to go to the page's checkout style
+          element.</code
+        >
+        <h2>Checkout Cart</h2>
+
+        <button
+          type="borrow-button"
+          onclick="location.href='checkout.html'"
+          onclick="window.location.href='checkout.html'"
+        >
+          Go to Checkout Style Element
+        </button>
+      </section>
+    </section>
+
+    <!---Details about Company and Branding-->
+    <section class="elements" id="about">
+      <h3>Details about Company and Branding</h3>
+      <h4>What does the company do, or offer?</h4>
+      <p>
+        It is a small library powered by a community of book lovers
+        <br />What is unique about this establishment is that hosts a collection
+        of books exclusive to works with Victorian themes
+      </p>
+      <h4>Who is the company to potential customers?</h4>
+      <p>
+        Potential customers range from age 19 and above
+        <br />Young adults and adults who enjoy reading Victorian-themed books
+        <br />Living in Vancouver as this is a local web-based library
+      </p>
+      <h4>
+        Why might this company entice someone to purchase a product or service?
+      </h4>
+      <p>
+        Customers might be enticed to purchase from this service because it is
+        local and has a strong book community centered around a specific target
+        audience
+        <br />All the books are owned within the community and no purchase is
+        needed, since this is a library
+      </p>
+    </section>
+
+    <section class="element">
+      <h3>Colours</h3>
+      <img src="img/colourpalette-coolors.png" class="colours" />
+    </section>
+
+    <!---Citations Section-->
+    <section class="element" id="citations">
+      <h3>Citations</h3>
+      <p class="citations">Description for Emma</p>
+      https://vpl.bibliocommons.com/v2/record/S38C2765537
+      <p class="citations">Description for Pride and Prejudice</p>
+      https://nlb.overdrive.com/media/505744
+      <p class="citations">Description for The Viscount Who Loved Me</p>
+      https://nlb.overdrive.com/media/3784454
+      <p class="citations">Description for Sense and Sensibility</p>
+      https://nlb.overdrive.com/media/61984
+      <p class="citations">Colour Palette Generator</p>
+      https://coolors.co/
+      <p class="citations">Drop Shadow Style</p>
+      https://getcssscan.com/css-box-shadow-examples
+      <p class="citations">Navigation Bar Tutorial by Skillthrive</p>
+      https://www.youtube.com/watch?v=PwWHL3RyQgk
+      <p class="citations">Emma book cover</p>
+      https://images-na.ssl-images-amazon.com/images/I/A1dZA3BmyKL.jpg
+      <p class="citations">The Viscount Who Loved Me book cover</p>
+      https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1379594308l/861326.jpg
+      <p class="citations">Sense and Sensibility book cover</p>
+      https://m.media-amazon.com/images/I/81DACtsTtvL.jpg
+      <p class="citations">Pride and Prejudice book cover</p>
+      https://m.media-amazon.com/images/I/91vLVy3AQSL.jpg
+    </section>
+  </body>
+</html>
