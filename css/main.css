@@ -45,6 +45,22 @@ header {
   transition-duration: 0.2s;
 }
 
+.brand-home {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 545px;
+  font-family: 'Polarity', serif;
+  font-size: 250%;
+  font-weight: 700;
+  color: #1F09FF;
+}
+
+.brand-home:hover, .brand-home:focus {
+  color: #A6A6A6;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+
 .nav {
   display: inline-block;
   vertical-align: middle;
@@ -90,6 +106,15 @@ body {
 /* END OF BODY */
 
 /* HERO */
+.hero-image-home {
+  background-image: url("../img/background.jpg");
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .hero-image-index {
   background-image: url("../img/background.jpg");
   height: 1000px;
