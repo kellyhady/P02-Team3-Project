@@ -718,6 +718,21 @@ footer {
   color: #F5F5F5;
 }
 
+
+a.button_footer {
+  color: #FA5A20;
+  background-color: #030303;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.75em;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+a.button:hover, a.button:focus {
+  background-color: #FFF;
+}
+
 .socials {
   list-style: none;
   display: flex;
