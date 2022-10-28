@@ -28,6 +28,7 @@ FLEXBOX STYLING - Échanger
 	background-color: #FFF;
 	border: 2px solid #030303;
 }
+
 .container .block img {
 	display: flex;
 	-webkit-flex: 3 1 auto;
@@ -38,10 +39,32 @@ FLEXBOX STYLING - Échanger
 	margin-right: auto;
 	margin-bottom: -15px;
 }
+
 .container .block h2 {
 	padding-bottom: 2rem;
 	margin-bottom: 2rem;
 	border-bottom: 2px solid #030303;
+}
+
+.container .block-transparent {
+	-webkit-flex: 1 1 15em;
+	-ms-flex: 1 1 15em;
+	flex: 1 1 15em;
+	padding: 0 1rem;
+	padding: 1rem 2rem 2rem 2rem;
+	margin: 2rem 2rem 2rem 2rem;
+	background-color: transparent;
+}
+
+.container .block-transparent h2 {
+	font-size: 36px;
+	color: #000;
+}
+
+.text-transparent {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 /* END OF CONTAINER BLOCKS */
 

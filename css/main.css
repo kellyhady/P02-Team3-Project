@@ -48,7 +48,7 @@ header {
 .brand-home {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 545px;
+  margin-right: 580px;
   font-family: 'Polarity', serif;
   font-size: 250%;
   font-weight: 700;
@@ -98,9 +98,153 @@ header.scroll-down{
 }
 /* END OF SCROLLER */
 
-/* SCROLLER BUTTON: https://codepen.io/nxworld/pen/OyRrGy */
+/* SCROLLER BUTTON: https://codepen.io/rightblog/pen/EagNMN/ */
+.mouse_scroll {
+	display: block;
+	margin: 0 auto;
+  margin-top: 125px;
+	width: 25px;
+	height: 100px;
+}
 
-/* END OF SCROLLER BUTTON: https://codepen.io/nxworld/pen/OyRrGy */
+.m_scroll_arrows {
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin: 0 0 5px 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.one, .two, .three {
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+}
+
+.one {
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.two {
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  animation-delay: .2s;
+  animation-direction: alternate;
+  margin-top: -5px;
+}
+
+.three {
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  animation-delay: .3s;
+  animation-direction: alternate;
+  margin-top: -5px;
+}
+
+.mouse {
+  height: 45px;
+  width: 25px;
+  border-radius: 15px;
+  transform: none;
+  border: 2px solid #000;
+  top: 180px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: #000;
+  position: relative;
+  height: 5px;
+  width: 5px;
+  border: 2px solid #000;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel {
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px; }
+  75% { top: 2px; }
+  100% { top: 1px; }
+}
+
+@-o-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px; }
+  75% { top: 2px; }
+  100% { top: 1px; }
+}
+@keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px; }
+  75% { top: 2px; }
+  100% { top: 1px; }
+}
+
+@-webkit-keyframes mouse-scroll {
+  0% { opacity: 0;}
+  50% { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes mouse-scroll {
+  0% { opacity: 0; }
+  50% { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+  0% { opacity: 0; }
+  50% { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+  0% { opacity: 0; }
+  50% { opacity: .5; }
+  100% { opacity: 1; }
+}
+/* END OF SCROLLER BUTTON */
+
+/* INFINITE LOOP SLIDER */
+
+/* END OF INFINITE LOOP SLIDER */
 
 /* BODY */
 body {
@@ -157,7 +301,6 @@ body {
 
 h1.hero {
   font-size: 725%;
-
   line-height: 0.85;
 }
 
@@ -171,8 +314,20 @@ p.hero {
   padding: 5rem;
 }
 
+.content-red {
+  padding: 5rem;
+  background-color: #FA5A20;
+}
+
 .element {
   background-color: #F5F5F5;
+  padding: 1rem 2rem 2rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.element-white {
+  background-color: #FFF;
   padding: 1rem 2rem 2rem 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
