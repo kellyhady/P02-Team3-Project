@@ -242,9 +242,23 @@ header.scroll-down{
 }
 /* END OF SCROLLER BUTTON */
 
-/* INFINITE LOOP SLIDER */
+/* FILTER: https://codepen.io/samgordon/pen/jPqqWB */
+input[type="radio"][id="vancouver"]:checked ~ .toronto {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
 
-/* END OF INFINITE LOOP SLIDER */
+input[type="radio"][id="toronto"]:checked ~ .vancouver {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+/* END OF FILTER */
 
 /* BODY */
 body {
