@@ -424,6 +424,10 @@ h2 {
   margin-bottom: 1rem;
 }
 
+h2.reviews {
+  font-size: 500%;
+}
+
 h3 {
   font-family: "Polarity", serif;
   font-style: italic;
@@ -868,8 +872,7 @@ textarea {
   position: relative;
 }
 
-.star-rating input:hover + i,
-.star-rating input:checked + i {
+.star-rating input:hover + i, .star-rating input:checked + i {
   opacity: 1;
 }
 
