@@ -750,22 +750,19 @@ footer {
 /* END OF FOOTER */
 
 /* REVIEWS FORM: https://codeconvey.com/feedback-form-in-html/ */
-.feedback {
-  width: 100%;
-  max-width: 780px;
-  background: #fff;
-  margin: 0 auto;
-  padding: 15px;
-  box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
+.survey-hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #DDD;
 }
 
-.survey-hr {
-  margin: 10px 0;
-  border: .5px solid #ddd;
+textarea {
+  width: 100%;
+  padding: 15px;
 }
 
 .star-rating {
-  margin: 25px 0 0px;
+  margin-top: 30px;
   font-size: 0;
   white-space: nowrap;
   display: inline-block;
