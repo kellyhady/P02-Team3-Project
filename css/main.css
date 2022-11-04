@@ -39,8 +39,7 @@ header {
   color: #1f09ff;
 }
 
-.brand:hover,
-.brand:focus {
+.brand:hover, .brand:focus {
   color: #a6a6a6;
   transition-property: color;
   transition-duration: 0.2s;
@@ -49,15 +48,14 @@ header {
 .brand-home {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 580px;
+  margin-right: 780px;
   font-family: "Polarity", serif;
   font-size: 250%;
   font-weight: 700;
   color: #1f09ff;
 }
 
-.brand-home:hover,
-.brand-home:focus {
+.brand-home:hover, .brand-home:focus {
   color: #a6a6a6;
   transition-property: color;
   transition-duration: 0.2s;
