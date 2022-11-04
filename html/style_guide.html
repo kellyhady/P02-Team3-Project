@@ -214,9 +214,9 @@
           <code>&lt;label&gt;&lt;input type="radio" name="radio-buttons" id="button-2" value="Button 2"/&gt;Radio Button 2&lt;/label&gt;</code>
           <code>&lt;label&gt;&lt;input type="radio" name="radio-buttons" id="button-3" value="Button 3"/&gt;Radio Button 3&lt;/label&gt;</code>
           <h4>Rendered Element:</h4>
-          <label class="radio-button"><input class="radio-button" type="radio" name="ticket-selection" id="one-day" value="one-day">One-Day Pass</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <label class="radio-button"><input class="radio-button" type="radio" name="ticket-selection" id="multi-day" value="multi-day">Multi-Day Pass</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <label class="radio-button"><input class="radio-button" type="radio" name="ticket-selection" id="group" value="group">Group Pass</label>
+          <label class="radio-button"><input class="radio-button" type="radio" name="ticket-selection" id="stay-1" value="stay-1">Homestay Listing 1</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label class="radio-button"><input class="radio-button" type="radio" name="ticket-selection" id="stay-2" value="stay-2">Homestay Listing 2</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label class="radio-button"><input class="radio-button" type="radio" name="ticket-selection" id="stay-3" value="stay-3">Homestay Listing 3</label>
         </section>
         <!-- // END OF RADIO BUTTON WITH LABEL // -->
 
@@ -288,9 +288,9 @@
           <code>&lt;/ol&gt;</code>
           <h4>Rendered Element:</h4>
           <ol type="1">
-            <li class="numbered">General Admission (GA) Ticket</li>
-            <li class="numbered">One-Day Ticket</li>
-            <li class="numbered">Multi-Day Ticket</li>
+            <li class="numbered">Homestay Listing 1</li>
+            <li class="numbered">Homestay Listing 2</li>
+            <li class="numbered">Homestay Listing 3</li>
           </ol>
         </section>
         <!-- // END OF NUMBERED LISTS // -->
@@ -302,19 +302,21 @@
         <!-- // MAIN NAVIGATION // -->
         <section class="element">
           <h3>Main Navigation</h3>
-          <div class="brand">
+          <div class="brand-home">
             <ul>
-              <li><a href="../html/index.html"><img src="../img/logo.png" width ="225" alt="Homestay Inc."></a></li>
+              <li>
+                <a href="index.html"
+                  ><img src="../img/logo.png" width="225" alt="Homestay Inc."
+                /></a>
+              </li>
             </ul>
           </div>
           <div class="nav">
             <ul>
-              <li><a class="in-text" href="#interactive_elements">interactive elements</a></li>
-              <li><a class="in-text" href="#text_elements">text elements</a></li>
-              <li><a class="in-text" href="#combined_elements">combined elements</a></li>
-              <li><a class="in-text" href="../html/listings/listings.html">product listing</a></li>
-              <li><a class="in-text" href="../html/checkout_cart.html">checkout cart</a></li>
-              <li><a class="button" href="#citations">citations</a></li>
+              <li><a class="in-text" href="about.html">about us</a></li>
+              <li><a class="in-text" href="reviews.html">review us</a></li>
+              <li><a class="in-text" href="contact.html">contact us</a></li>
+              <li><a class="button" href="listings/listings.html">view our listings</a></li>
             </ul>
           </div>
         </section>
@@ -325,80 +327,69 @@
           <h3>Product/Service Listing</h3>
 
           <div class="container">
-            <!-- // SECTION 1: GENERAL ADMISSION ENTRY // -->
-            <div class="block">
-              <h2>General Admission (GA) Entry</h2>
-              <img src="../img/ticket-general-admission.jpg" width="595" title="General Admission (GA) Ticket of Homestay Inc." alt="General Admission Ticket">
-              <br><br>
-              <p>General Admission (GA) Entries purchased online are valid for use on the day of purchase only.</p>
-              <p>For more information, please refer to <a class="in-text" href="#">Entry Details</a>.</p>
-              <div class="container">
-                <div class="table-block">
-                  <h4>CAD 20 (€15) PER ENTRY</h4>
-                </div>
-                <div class="table-block">
-                  <a class="add-to-cart-button" href="../html/checkout_cart.html">Add to Cart <img src="../img/cart.png" width="20" alt="Add-to-Cart"></a>
-                </div>
-              </div>
-            </div>
-            <!-- // END OF SECTION 1 // -->
 
-            <!-- // SECTION 2: ONE-DAY ENTRY // -->
-            <div class="block">
-              <h2>One-Day Entry</h2>
-              <img src="../img/ticket-one-day.jpg" width="595" title="One-Day Ticket of Homestay Inc." alt="One-Day Ticket">
+            <!-- // LISTING 1 // -->
+            <div class="block vancouver">
+              <h3>Single-Family Home in Vancouver, BC</h3>
+              <img src="../img/listing-1.jpg" width="595" title="Single-Family Home in Vancouver, BC" alt="Single-Family Home">
               <br><br>
-              <p>One-Day Entries purchased online are valid for unlimited uses on the day of purchase only.</p>
-              <p>For more information, please refer to <a class="in-text" href="#">Entry Details</a>.</p>
+              <p>Located in the laid-back neighborhood of Mount Pleasant, our three-bedroom, two-bath home is ideal for hosting a student.</p>
+              <p>For more information, please refer to <a class="in-text" href="../html/listings/listing-1.html">Listing Details</a>.</p>
               <div class="container">
                 <div class="table-block">
-                  <h4>CAD 25 (€18) PER ENTRY</h4>
-                </div>
-                <div class="table-block">
-                  <a class="add-to-cart-button" href="../html/checkout_cart.html">Add to Cart <img src="../img/cart.png" width="20" alt="Add-to-Cart"></a>
+                  <a class="add-to-cart-button" href="../html/booking.html">Book Now<img src="../img/book.png" width="20" alt="Book"></a>
                 </div>
               </div>
             </div>
-            <!-- // END OF SECTION 2 // -->
+            <!-- // END OF LISTING 1 // -->
+
+            <!-- // LISTING 2 // -->
+            <div class="block vancouver">
+              <h3>Condo in Vancouver, BC</h3>
+              <img src="../img/listing-2.jpg" width="595" title="Condo in Vancouver, BC" alt="Condo">
+              <br><br>
+              <p>Located in the contemporary neighborhood of Yaletown, our detached condo is a three-minute walk away from your favorite restaurants.</p>
+              <p>For more information, please refer to <a class="in-text" href="../html/listings/listing-2.html">Listing Details</a>.</p>
+              <div class="container">
+                <div class="table-block">
+                  <a class="add-to-cart-button" href="../html/booking.html">Book Now<img src="../img/book.png" width="20" alt="Book"></a>
+                </div>
+              </div>
+            </div>
+            <!-- // END OF LISTING 2 // -->
           </div>
 
           <div class="container">
-            <!-- // SECTION 3: MULTI-DAY ENTRY // -->
-            <div class="block">
-              <h2>Multi-Day Entry</h2>
-              <img src="../img/ticket-multi-day.jpg" width="595" title="Multi-Day Ticket of Homestay Inc." alt="Multi-Day Ticket">
+            <!-- // LISTING 3 // -->
+            <div class="block toronto">
+              <h3>Single-Family Home in Toronto, OT</h3>
+              <img src="../img/listing-3.jpg" width="595" title="Single-Family Home in Toronto, OT" alt="Single-Family Home">
               <br><br>
-              <p>Multi-Day Entries purchased online are valid for unlimited uses on the week of our semiannual Swap Meet.</p>
-              <p>For more information, please refer to <a class="in-text" href="#">Entry Details</a>.</p>
+              <p>Located in the laid-back neighborhood of Danforth Village, our three-bedroom, two-bath home is ideal for hosting a student.</p>
+              <p>For more information, please refer to <a class="in-text" href="../html/listings/listing-3.html">Listing Details</a>.</p>
               <div class="container">
                 <div class="table-block">
-                  <h4>CAD 50 (€36) PER ENTRY</h4>
-                </div>
-                <div class="table-block">
-                  <a class="add-to-cart-button" href="../html/checkout_cart.html">Add to Cart <img src="../img/cart.png" width="20" alt="Add-to-Cart"></a>
+                  <a class="add-to-cart-button" href="../html/booking.html">Book Now<img src="../img/book.png" width="20" alt="Book"></a>
                 </div>
               </div>
             </div>
-            <!-- // END OF SECTION 3 // -->
+            <!-- // END OF LISTING 3 // -->
 
-            <!-- // SECTION 4: GROUP ENTRY // -->
-            <div class="block">
-              <h2>Group Entry</h2>
-              <img src="../img/ticket-group.jpg" width="595" title="One-Day Ticket of Homestay Inc." alt="One-Day Ticket">
+            <!-- // LISTING 4 // -->
+            <div class="block toronto">
+              <h3>Condo in Toronto, OT</h3>
+              <img src="../img/listing-4.jpg" width="595" title="Condo in Toronto, OT" alt="Condo">
               <br><br>
-              <p>Group Entries purchased online are valid for quatre entrants on the day of purchase only.</p>
-              <p>For more information, please refer to <a class="in-text" href="#">Entry Details</a>.</p>
-
+              <p>Located in the contemporary neighborhood of the Distillery District, our detached condo is a three-minute walk away from your favorite restaurants.</p>
+              <p>For more information, please refer to <a class="in-text" href="../html/listings/listing-4.html">Listing Details</a>.</p>
               <div class="container">
                 <div class="table-block">
-                  <h4>CAD 60 (€45) PER GROUP</h4>
-                </div>
-                <div class="table-block">
-                  <a class="add-to-cart-button" href="../html/checkout_cart.html">Add to Cart <img src="../img/cart.png" width="20" alt="Add-to-Cart"></a>
+                  <a class="add-to-cart-button" href="../html/booking.html">Book Now<img src="../img/book.png" width="20" alt="Book"></a>
                 </div>
               </div>
             </div>
-            <!-- // END OF SECTION 4 // -->
+            <!-- // END OF LISTING 4 // -->
+
           </div>
         </section>
 
