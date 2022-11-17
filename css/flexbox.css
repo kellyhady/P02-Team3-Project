@@ -67,15 +67,13 @@ FLEXBOX STYLING - Échanger
 }
 
 .container .block-transparent img {
-	max-width: 655px;
-	display: flex;
-	-webkit-flex: 3 1 auto;
-	-ms-flex: 3 1 auto;
-	flex: 3 1 auto;
+	max-width: 500px;
+	flex: 0 1 auto;
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: -15px;
+	order: -1;
 }
 
 .container .block-transparent h2 {
@@ -253,6 +251,25 @@ FLEXBOX STYLING - Échanger
 	/* END OF HERO */
 
 	/* CONTAINERS */
+	.container .text {
+		order: 2;
+	}
+	.container .image {
+		order: 1;
+	}
+	.container .block-transparent {
+		-webkit-flex: 1 1 15em;
+		-ms-flex: 1 1 15em;
+		flex: 1 1 15em;
+		padding: 0 1rem;
+		padding: 0.125rem 0.125rem 0.125rem 0.125rem;
+		margin: 0rem;
+		background-color: transparent;
+	}
+	.container .block-transparent img {
+		margin-top: 2.5rem;
+		margin-bottom: 2.5rem;
+	}
 	.container .block img {
 		max-width: 150px;
 		-webkit-flex: 3 1 auto;
