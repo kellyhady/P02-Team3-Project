@@ -298,6 +298,10 @@ header.scroll-down {
 }
 /* END OF SCROLLER BUTTON */
 
+/* NOTIFICATION BAR */
+
+/* END OF NOTIFICATION BAR */
+
 /* FILTER: https://codepen.io/samgordon/pen/jPqqWB */
 input[type="radio"][id="vancouver"]:checked ~ .toronto {
   width: 0;
