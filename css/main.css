@@ -767,7 +767,7 @@ input.radio-button:checked {
   position: absolute;
   outline: 2px solid #030303;
   background-color: #FFF;
-  top: 100%;
+  top: 104%;
   left: 0;
   right: 0;
   z-index: 99;
