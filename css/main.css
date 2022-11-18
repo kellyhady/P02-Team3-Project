@@ -83,8 +83,7 @@ a.button {
   transition-duration: 0.2s;
 }
 
-a.button:hover,
-a.button:focus {
+a.button:hover, a.button:focus {
   background-color: #fa5a20;
 }
 /* END OF NAVIGATION BAR: https://www.cssscript.com/show-hide-navbar-scroll-down-up/ */
@@ -723,11 +722,72 @@ input.radio-button:checked {
   transition-duration: 0.5s;
 }
 
-.buttons:hover,
-.buttons:focus {
+.buttons:hover, .buttons:focus {
   background-color: #fa5a20;
 }
 /* END OF BUTTON */
+
+/* DROPDOWN FIELD: https://www.w3schools.com/howto/howto_custom_select.asp/ */
+.custom-select {
+  position: relative;
+  border: 2px solid #030303;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected {
+  background-color: #FFF;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  right: 20px;
+  border: 10px solid transparent;
+  border-color: #fa5a20 transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  position: absolute;
+  border-color: transparent transparent #fa5a20 transparent;
+  top: 12.5px;
+}
+
+.select-items div,.select-selected {
+  color: #000;
+  padding: 1.25rem 1.25rem;
+  outline: 1px solid #030303;
+  cursor: pointer;
+}
+
+.select-items {
+  position: absolute;
+  outline: 2px solid #030303;
+  background-color: #FFF;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover {
+  background-color: #f5f5f5;
+  transition: 0.2s all linear;
+}
+
+.same-as-selected {
+  background: #fa5a20;
+  transition: 0.2s all linear;
+}
+
+/* END OF DROPDOWN FIELD */
 
 /* ADD-TO-CART BUTTON */
 .add-to-cart-button {

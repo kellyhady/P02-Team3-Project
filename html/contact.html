@@ -79,7 +79,7 @@
 
           <div class="block">
             <h3>CONTACT FORM</h3>
-            <p>Whether you are curious about one of our cozy, homey homes or your booking, we are ready to answer any and all of your inquiries!</p>
+            <p>Whether you are curious about your booking or one of our cozy, homey homes, we are ready to answer any and all of your inquiries!</p>
             <div class="table-block">
               <!-- // TABLE // -->
               <div class="container">
@@ -135,9 +135,18 @@
                   <form>
                     <!-- // SUBJECT // -->
                     <div class="group">
-                      <input class="floating-field" id="exp-month" type="text" required />
-                      <span class="highlight"></span><span class="bar"></span>
-                      <label class="floating-label">Subject</label>
+                      <form>
+                        <label for="subject">Subject</label><br/><br/>
+                        <div class="custom-select" style="width:auto;">
+                          <select name="subject" id="subject">
+                            <option value="0">Select Subject:</option>
+                            <option value="1">Booking Details & Process</option>
+                            <option value="2">Stay Listings</option>
+                            <option value="3">Others</option>
+                          </select>
+                        </div>
+                      </form>
+
                     </div>
                     <br>
                     <!-- // END OF SUBJECT // -->
