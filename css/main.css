@@ -40,7 +40,8 @@ header {
   color: #1f09ff;
 }
 
-.brand:hover, .brand:focus {
+.brand:hover,
+.brand:focus {
   color: #a6a6a6;
   transition-property: color;
   transition-duration: 0.2s;
@@ -56,7 +57,8 @@ header {
   color: #1f09ff;
 }
 
-.brand-home:hover, .brand-home:focus {
+.brand-home:hover,
+.brand-home:focus {
   color: #a6a6a6;
   transition-property: color;
   transition-duration: 0.2s;
@@ -84,7 +86,8 @@ a.button {
   transition-duration: 0.2s;
 }
 
-a.button:hover, a.button:focus {
+a.button:hover,
+a.button:focus {
   background-color: #fa5a20;
 }
 /* END OF NAVIGATION BAR: https://www.cssscript.com/show-hide-navbar-scroll-down-up/ */
@@ -122,7 +125,9 @@ header.scroll-down {
   height: 15px;
 }
 
-.one, .two, .three {
+.one,
+.two,
+.three {
   -webkit-animation: mouse-scroll 1s infinite;
   -moz-animation: mouse-scroll 1s infinite;
   animation: mouse-scroll 1s infinite;
@@ -309,7 +314,7 @@ header.scroll-down {
 }
 
 .notification-content {
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
@@ -573,7 +578,8 @@ footer a.in-text:hover {
 }
 
 footer a.in-text:focus {
-  background: linear-gradient(to right, #a6a6a6, #a6a6a6), linear-gradient(to right, #a6a6a6, #a6a6a6);
+  background: linear-gradient(to right, #a6a6a6, #a6a6a6),
+    linear-gradient(to right, #a6a6a6, #a6a6a6);
   background-size: 100% 8px, 0 8px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -746,7 +752,8 @@ input.radio-button:checked {
   transition-duration: 0.5s;
 }
 
-.buttons:hover, .buttons:focus {
+.buttons:hover,
+.buttons:focus {
   background-color: #fa5a20;
 }
 
@@ -763,7 +770,8 @@ input.radio-button:checked {
   transition-duration: 0.5s;
 }
 
-.button-notification:hover, .button-notification:focus {
+.button-notification:hover,
+.button-notification:focus {
   background-color: #a6a6a6;
 }
 
@@ -780,7 +788,8 @@ input.radio-button:checked {
   transition-duration: 0.5s;
 }
 
-.button-close:hover, .button-close:focus {
+.button-close:hover,
+.button-close:focus {
   opacity: 0.5;
 }
 
@@ -792,7 +801,8 @@ input.radio-button:checked {
   transition-duration: 0.5s;
 }
 
-.button-copy:hover, .button-copy:focus {
+.button-copy:hover,
+.button-copy:focus {
   opacity: 0.5;
 }
 /* END OF BUTTON */
@@ -808,7 +818,7 @@ input.radio-button:checked {
 }
 
 .select-selected {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .select-selected:after {
@@ -826,7 +836,8 @@ input.radio-button:checked {
   top: 12.5px;
 }
 
-.select-items div,.select-selected {
+.select-items div,
+.select-selected {
   color: #000;
   padding: 1.25rem 1.25rem;
   outline: 1px solid #030303;
@@ -836,7 +847,7 @@ input.radio-button:checked {
 .select-items {
   position: absolute;
   outline: 2px solid #030303;
-  background-color: #FFF;
+  background-color: #fff;
   top: 104%;
   left: 0;
   right: 0;
@@ -874,7 +885,8 @@ input.radio-button:checked {
   transition-duration: 0.5s;
 }
 
-.add-to-cart-button:hover, .add-to-cart-button:focus {
+.add-to-cart-button:hover,
+.add-to-cart-button:focus {
   background-color: #fa5a20;
 }
 /* END OF ADD-TO-CART BUTTON */
@@ -947,7 +959,7 @@ footer {
 .survey-hr {
   margin-top: 30px;
   margin-bottom: 30px;
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
 }
 
 textarea {
@@ -995,7 +1007,8 @@ textarea {
   position: relative;
 }
 
-.star-rating input:hover + i, .star-rating input:checked + i {
+.star-rating input:hover + i,
+.star-rating input:checked + i {
   opacity: 1;
 }
 
@@ -1015,3 +1028,49 @@ textarea {
   width: 100%;
 }
 /* END OF REVIEWS FORM */
+
+/*PRODUCT FILTER AND SEARCH: https://codingartistweb.com/2021/11/product-filter-and-search-using-javascript/*/
+#search-block input {
+  background-color: transparent;
+  border-bottom-color: #fa5a20;
+  width: 40%;
+  padding: 1em 0.3em;
+}
+
+#search-block input:focus {
+  outline: none;
+  border-bottom-color: #fa5a20;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+#search-button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+
+#filter-buttons {
+  /* padding: 1em 2em; */
+  /* margin-left: 1em; */
+  /* background-color: #6759ff; */
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+.button-value {
+  padding: 0.5em 2em;
+  margin: 0.5px;
+  border-radius: 20px;
+  color: #ffffff;
+  border: 1px solid black;
+  background-color: black;
+  cursor: pointer;
+}
+
+.button-value:hover {
+  color: #f5f5f5;
+  border: 1px solid #fa5a20;
+  background-color: #fa5a20;
+  transition: 0.2s all linear;
+}
