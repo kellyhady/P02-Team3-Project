@@ -27,6 +27,7 @@ header {
   width: 100%;
   transition: all 300ms ease;
   z-index: 10;
+  border-bottom: 2px solid #030303;
 }
 
 .brand {
@@ -48,7 +49,7 @@ header {
 .brand-home {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 550px;
+  margin-right: 525px;
   font-family: "Polarity", serif;
   font-size: 250%;
   font-weight: 700;
@@ -298,22 +299,26 @@ header.scroll-down {
 
 /* NOTIFICATION BAR: https://www.discussdesk.com/create-fixed-sticky-footer-notification-bar-in-html.htm */
 .notification-bar {
-background-color: #fa5a20;
-bottom: 0;
-padding: 5px 0;
-position: fixed;
-width: 100%;
-z-index: 10;
-height: 4rem;
+  background-color: #fa5a20;
+  bottom: 0;
+  padding: 17.5px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  height: 5rem;
 }
 
 .notification-content {
-color: #FFF;
-display: block;
-font-size: 18px;
-font-weight: 600;
-margin: auto;
-text-align: center;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.notification-close {
+  position: absolute;
+  bottom: 5px;
+  right: 17.5px;
 }
 
 /* END OF NOTIFICATION BAR */
@@ -568,8 +573,7 @@ footer a.in-text:hover {
 }
 
 footer a.in-text:focus {
-  background: linear-gradient(to right, #a6a6a6, #a6a6a6),
-    linear-gradient(to right, #a6a6a6, #a6a6a6);
+  background: linear-gradient(to right, #a6a6a6, #a6a6a6), linear-gradient(to right, #a6a6a6, #a6a6a6);
   background-size: 100% 8px, 0 8px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -745,6 +749,40 @@ input.radio-button:checked {
 .buttons:hover, .buttons:focus {
   background-color: #fa5a20;
 }
+
+.button-notification {
+  display: inline-block;
+  padding: 0.75rem;
+  color: #fff;
+  background-color: #030303;
+  border-style: hidden;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-notification:hover, .button-notification:focus {
+  background-color: #a6a6a6;
+}
+
+.button-close {
+  float: right;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+  padding: 1rem 5rem 1rem 5rem;
+  border-style: hidden;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-close:hover, .button-close:focus {
+  opacity: 0.5;
+}
 /* END OF BUTTON */
 
 /* DROPDOWN FIELD: https://www.w3schools.com/howto/howto_custom_select.asp/ */
@@ -806,7 +844,6 @@ input.radio-button:checked {
   background: #fa5a20;
   transition: 0.2s all linear;
 }
-
 /* END OF DROPDOWN FIELD */
 
 /* ADD-TO-CART BUTTON */
@@ -825,8 +862,7 @@ input.radio-button:checked {
   transition-duration: 0.5s;
 }
 
-.add-to-cart-button:hover,
-.add-to-cart-button:focus {
+.add-to-cart-button:hover, .add-to-cart-button:focus {
   background-color: #fa5a20;
 }
 /* END OF ADD-TO-CART BUTTON */

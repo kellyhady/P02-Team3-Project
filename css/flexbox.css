@@ -17,6 +17,15 @@ FLEXBOX STYLING - Échanger
 	-ms-justify-content: space-around;
 	justify-content: space-around;
 }
+
+.container .image {
+	order: 1;
+}
+
+.container .text {
+	order: 2;
+}
+	
 /* Set the .block class to grow as needed, as well as to have a basis of 15em. */
 .container .block {
 	-webkit-flex: 1 1 15em;
@@ -177,10 +186,10 @@ FLEXBOX STYLING - Échanger
 	/* NAVIGATION BAR */
 	.nav {
 		display: flex;
-		padding-bottom: 65px;
+		padding-bottom: 30px;
 	}
 	a.button {
-		display:block;
+		display:inline;
 	}
 	/* END OF NAVIGATION BAR */
 
@@ -201,7 +210,18 @@ FLEXBOX STYLING - Échanger
 }
 
 /* BREAKPOINT 4 */
-@media (max-width:900px) {
+@media (max-width:920px) {
+	.notification-bar {
+	  opacity:0
+	}
+	.nav {
+		display: flex;
+		padding-bottom: 20px;
+	}
+	a.button {
+		display: block;
+		line-height: 120%;
+	}
 	/* TEXT INPUT FIELD */
 	.container .table-block input.floating-field {
 		padding: 10px 10px 10px 5px;
@@ -226,7 +246,7 @@ FLEXBOX STYLING - Échanger
 	/* NAVIGATION BAR */
 	.nav {
 		display: flex;
-		padding-bottom: 65px;
+		padding-bottom: 30px;
 	}
 	.nav ul {
 		display: inline;
@@ -234,6 +254,7 @@ FLEXBOX STYLING - Échanger
 		line-height: 250%;
 	}
 	a.button {
+		display: block;
 		margin-top: 20px;
 		line-height: 120%;
 	}
