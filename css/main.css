@@ -783,6 +783,18 @@ input.radio-button:checked {
 .button-close:hover, .button-close:focus {
   opacity: 0.5;
 }
+
+.button-copy {
+  float: right;
+  border-style: hidden;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-copy:hover, .button-copy:focus {
+  opacity: 0.5;
+}
 /* END OF BUTTON */
 
 /* DROPDOWN FIELD: https://www.w3schools.com/howto/howto_custom_select.asp/ */
