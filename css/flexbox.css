@@ -278,7 +278,7 @@ FLEXBOX STYLING - Échanger
 	}
 	.element-white {
 	  background-color: #fff;
-	  padding: 0rem 2rem 2rem 2rem;
+	  padding: 0rem 1rem 1rem 1rem;
 	  margin-top: 0rem;
 	  margin-bottom: 2rem;
 	}
@@ -287,6 +287,13 @@ FLEXBOX STYLING - Échanger
 	}
 	.container .text {
 		order: 2;
+	}
+	.container .block {
+		-webkit-flex: 1 1 15em;
+		-ms-flex: 1 1 15em;
+		flex: 1 1 15em;
+		margin: 0rem;
+		background-color: transparent;
 	}
 	.container .block-transparent {
 		-webkit-flex: 1 1 15em;
