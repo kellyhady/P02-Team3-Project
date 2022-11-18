@@ -1,3 +1,14 @@
+/*
+JAVASCRIPT - Homestay Inc.
+*/
+
+// CLOSE NOTIFICATION BAR //
+function closeFunction() {
+   document.getElementById("closed").style.opacity = 0;
+}
+// END OF CLOSE NOTIFICATION BAR //
+
+// NAVIGATION BAR //
 const body = document.body;
 const header = document.querySelector("header");
 const main = document.querySelector("main");
@@ -9,26 +20,22 @@ let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
   let currentScroll = window.pageYOffset;
-
   // console.log("current: ", currentScroll);
   // console.log("last: ", lastScroll);
-
   if (currentScroll - lastScroll > 0) {
-    // scrolled down -- header hide
     header.classList.add("scroll-down");
     header.classList.remove("scroll-up");
-  } else {
-    // scrolled up -- header show
+  }
+  else {
     header.classList.add("scroll-up");
     header.classList.remove("scroll-down");
   }
-
   lastScroll = currentScroll;
   // console.log("last: ", lastScroll);
 });
+// END OF NAVIGATION BAR //
 
 // DROPDOWN FIELD: https://www.w3schools.com/howto/howto_custom_select.asp //
-
 var x, i, j, l, ll, selElmnt, a, b, c;
 x = document.getElementsByClassName("custom-select");
 l = x.length;

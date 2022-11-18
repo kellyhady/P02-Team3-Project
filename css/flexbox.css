@@ -18,14 +18,6 @@ FLEXBOX STYLING - Échanger
 	justify-content: space-around;
 }
 
-.container .image {
-	order: 1;
-}
-
-.container .text {
-	order: 2;
-}
-	
 /* Set the .block class to grow as needed, as well as to have a basis of 15em. */
 .container .block {
 	-webkit-flex: 1 1 15em;
@@ -210,9 +202,19 @@ FLEXBOX STYLING - Échanger
 }
 
 /* BREAKPOINT 4 */
-@media (max-width:920px) {
+@media (max-width:1000px) {
+	.container .image {
+		order: 1;
+	}
+	.container .text {
+		order: 2;
+	}
+}
+
+/* BREAKPOINT 5 */
+@media (max-width:950px) {
 	.notification-bar {
-	  opacity:0
+	  opacity:0;
 	}
 	.nav {
 		display: flex;
@@ -241,7 +243,7 @@ FLEXBOX STYLING - Échanger
 	/* END OF TEXT INPUT FIELD */
 }
 
-/* BREAKPOINT 5 */
+/* BREAKPOINT 6 */
 @media (max-width:800px) {
 	/* NAVIGATION BAR */
 	.nav {
@@ -280,11 +282,11 @@ FLEXBOX STYLING - Échanger
 	  margin-top: 0rem;
 	  margin-bottom: 2rem;
 	}
-	.container .text {
-		order: 2;
-	}
 	.container .image {
 		order: 1;
+	}
+	.container .text {
+		order: 2;
 	}
 	.container .block-transparent {
 		-webkit-flex: 1 1 15em;
