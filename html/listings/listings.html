@@ -78,18 +78,50 @@
             </div>
           </div> -->
 
+          <!--// FILTER AND SEARCH //-->
           <div class="container">
             
             <div class="block">
+            <!-- // SEARCH INPUT //-->
               <div id="search-block">
                 <input
                 type="search"
                 id="search-input"
                 placeholder="What city are you looking for?"
                 >
-                <button id="search">Search</button>
-
+                <button class="buttons" id="search-button">
+                  Search
+                </button>
               </div>
+
+              <!--// FILTER BUTTONS //-->
+              <div id="container">
+                <h4>Filter by City</h4>
+                <div id="filter-buttons">
+                  <button class="button-value" onclick="filterProduct('all')">
+                    All
+                  </button>
+                  <button class="button-value" onclick="filterProduct('Vancouver')">
+                    Vancouver
+                  </button>
+                  <button class="button-value" onclick="filterProduct('Toronto')">
+                    Toronto
+                  </button>
+                  <button class="button-value" onclick="filterProduct('Montreal')">
+                    Montreal
+                  </button>
+                  <button class="button-value" onclick="filterProduct('Reset')">
+                    Reset
+                  </button>
+
+
+
+                </div>
+              </div>
+
+
+
+
             </div>
           </div>
 
