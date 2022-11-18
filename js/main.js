@@ -8,25 +8,24 @@ main.style.top = headerHeight + "px";
 let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
-    let currentScroll = window.pageYOffset;
+  let currentScroll = window.pageYOffset;
 
-    // console.log("current: ", currentScroll);
-    // console.log("last: ", lastScroll);
+  // console.log("current: ", currentScroll);
+  // console.log("last: ", lastScroll);
 
-    if (currentScroll - lastScroll > 0) {
-        // scrolled down -- header hide
-        header.classList.add("scroll-down");
-        header.classList.remove("scroll-up");
-    } else {
-        // scrolled up -- header show
-        header.classList.add("scroll-up");
-        header.classList.remove("scroll-down");
-    }
+  if (currentScroll - lastScroll > 0) {
+    // scrolled down -- header hide
+    header.classList.add("scroll-down");
+    header.classList.remove("scroll-up");
+  } else {
+    // scrolled up -- header show
+    header.classList.add("scroll-up");
+    header.classList.remove("scroll-down");
+  }
 
-    lastScroll = currentScroll;
-    // console.log("last: ", lastScroll);
-
-})
+  lastScroll = currentScroll;
+  // console.log("last: ", lastScroll);
+});
 
 // DROPDOWN FIELD: https://www.w3schools.com/howto/howto_custom_select.asp //
 
@@ -48,31 +47,31 @@ for (i = 0; i < l; i++) {
     /* For each option in the original select element, create a new DIV that will act as an option item: */
     c = document.createElement("DIV");
     c.innerHTML = selElmnt.options[j].innerHTML;
-    c.addEventListener("click", function(e) {
-        /* When an item is clicked, update the original select box, and the selected item: */
-        var y, i, k, s, h, sl, yl;
-        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        sl = s.length;
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < sl; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            yl = y.length;
-            for (k = 0; k < yl; k++) {
-              y[k].removeAttribute("class");
-            }
-            this.setAttribute("class", "same-as-selected");
-            break;
+    c.addEventListener("click", function (e) {
+      /* When an item is clicked, update the original select box, and the selected item: */
+      var y, i, k, s, h, sl, yl;
+      s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+      sl = s.length;
+      h = this.parentNode.previousSibling;
+      for (i = 0; i < sl; i++) {
+        if (s.options[i].innerHTML == this.innerHTML) {
+          s.selectedIndex = i;
+          h.innerHTML = this.innerHTML;
+          y = this.parentNode.getElementsByClassName("same-as-selected");
+          yl = y.length;
+          for (k = 0; k < yl; k++) {
+            y[k].removeAttribute("class");
           }
+          this.setAttribute("class", "same-as-selected");
+          break;
         }
-        h.click();
+      }
+      h.click();
     });
     b.appendChild(c);
   }
   x[i].appendChild(b);
-  a.addEventListener("click", function(e) {
+  a.addEventListener("click", function (e) {
     /* When the select box is clicked, close any other select boxes, and open/close the current select box: */
     e.stopPropagation();
     closeAllSelect(this);
@@ -83,14 +82,19 @@ for (i = 0; i < l; i++) {
 
 function closeAllSelect(elmnt) {
   /* A function that will close all select boxes in the document, except the current select box: */
-  var x, y, i, xl, yl, arrNo = [];
+  var x,
+    y,
+    i,
+    xl,
+    yl,
+    arrNo = [];
   x = document.getElementsByClassName("select-items");
   y = document.getElementsByClassName("select-selected");
   xl = x.length;
   yl = y.length;
   for (i = 0; i < yl; i++) {
     if (elmnt == y[i]) {
-      arrNo.push(i)
+      arrNo.push(i);
     } else {
       y[i].classList.remove("select-arrow-active");
     }
@@ -104,5 +108,9 @@ function closeAllSelect(elmnt) {
 
 /* If the user clicks anywhere outside the select box, then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+document.getElementById("submit-email").onclick = function () {
+  alert("Check your inbox! Your booking details have been sent to your email.");
+};
 
 // END OF DROPDOWN FIELD //
