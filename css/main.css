@@ -121,9 +121,7 @@ header.scroll-down {
   height: 15px;
 }
 
-.one,
-.two,
-.three {
+.one, .two, .three {
   -webkit-animation: mouse-scroll 1s infinite;
   -moz-animation: mouse-scroll 1s infinite;
   animation: mouse-scroll 1s infinite;
@@ -298,7 +296,25 @@ header.scroll-down {
 }
 /* END OF SCROLLER BUTTON */
 
-/* NOTIFICATION BAR */
+/* NOTIFICATION BAR: https://www.discussdesk.com/create-fixed-sticky-footer-notification-bar-in-html.htm */
+.notification-bar {
+background-color: #fa5a20;
+bottom: 0;
+padding: 5px 0;
+position: fixed;
+width: 100%;
+z-index: 10;
+height: 4rem;
+}
+
+.notification-content {
+color: #FFF;
+display: block;
+font-size: 18px;
+font-weight: 600;
+margin: auto;
+text-align: center;
+}
 
 /* END OF NOTIFICATION BAR */
 
