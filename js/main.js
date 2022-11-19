@@ -118,28 +118,24 @@ document.addEventListener("click", closeAllSelect);
 // END OF DROPDOWN FIELD //
 
 // POP-UP BOXES //
-document.getElementById("submit-confirmation").onclick = function() {confirmationFunction()};
-
-function confirmationFunction() {
-  alert('Thank you! Your confirmation has been sent to your email and/or phone number.');
-}
-
-document.getElementById("submit-message").onclick = function() {messageFunction()};
-
-function messageFunction() {
-    alert('Thank you for your message! Homestay Inc. will reply to your message within three business days.');
-}
-
-document.getElementById("submit-review").onclick = function() {reviewFunction()};
-
-function reviewFunction() {
-    alert('Thank you for your review! Homestay Inc. will reply to your review within three business days.');
-}
-
 window.onload = function(){
-    confirmationFunction();
-    messageFunction();
-    reviewFunction();
+  function confirmationFunction() {
+    alert('Thank you! Your confirmation has been sent to your email and/or phone number.');
+  }
+  function messageFunction() {
+      alert('Thank you for your message! Homestay Inc. will reply to your message within three business days.');
+  }
+  function reviewFunction() {
+      alert('Thank you for your review! Homestay Inc. will reply to your review within three business days.');
+  }
+
+  document.getElementById("submit-confirmation").onclick = function() {popUpFunction()};
+  document.getElementById("submit-message").onclick = function() {popUpFunction()};
+  document.getElementById("submit-review").onclick = function() {popUpFunction()};
+
+  document.getElementById("submit-confirmation").onclick = function() {confirmationFunction()};
+  document.getElementById("submit-message").onclick = function() {messageFunction()};
+  document.getElementById("submit-review").onclick = function() {reviewFunction()};
 };
 
 // END OF POP-UP BOXES //
