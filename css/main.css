@@ -570,7 +570,7 @@ footer a.in-text {
 
 footer a.in-text {
   background: linear-gradient(to right, #fa5a20, #fa5a20),
-    linear-gradient(to right, #a6a6a6, #a6a6a6);
+  linear-gradient(to right, #a6a6a6, #a6a6a6);
   background-size: 100% 8px, 0 8px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -583,7 +583,7 @@ footer a.in-text:hover {
 
 footer a.in-text:focus {
   background: linear-gradient(to right, #a6a6a6, #a6a6a6),
-    linear-gradient(to right, #a6a6a6, #a6a6a6);
+  linear-gradient(to right, #a6a6a6, #a6a6a6);
   background-size: 100% 8px, 0 8px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -597,7 +597,7 @@ a.in-text {
 
 a.in-text {
   background: linear-gradient(to right, #fdd037, #fdd037),
-    linear-gradient(to right, #fa5a20, #fa5a20);
+  linear-gradient(to right, #fa5a20, #fa5a20);
   background-size: 100% 8px, 0 8px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -610,7 +610,7 @@ a.in-text:hover {
 
 a.in-text:focus {
   background: linear-gradient(to right, #fa5a20, #fa5a20),
-    linear-gradient(to right, #fa5a20, #fa5a20);
+  linear-gradient(to right, #fa5a20, #fa5a20);
   background-size: 100% 8px, 0 8px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -1033,7 +1033,7 @@ textarea {
 }
 /* END OF REVIEWS FORM */
 
-/*PRODUCT FILTER AND SEARCH: https://codingartistweb.com/2021/11/product-filter-and-search-using-javascript/*/
+/* PRODUCT FILTER AND SEARCH: https://codingartistweb.com/2021/11/product-filter-and-search-using-javascript/ */
 #search-button {
   margin: 2em 0;
 }
@@ -1058,6 +1058,7 @@ textarea {
   font-weight: 600px;
   margin-top: 0.5em;
 }
+
 .button-value {
   color: #000;
   font-weight: 600px;
@@ -1086,3 +1087,4 @@ textarea {
 #update-images {
   padding: 1.5em 0;
 }
+/* END OF PRODUCT FILTER AND SEARCH */

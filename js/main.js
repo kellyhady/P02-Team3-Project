@@ -4,7 +4,7 @@ JAVASCRIPT - Homestay Inc.
 
 // CLOSE NOTIFICATION BAR //
 function closeFunction() {
-   document.getElementById("closed").style.opacity = 0;
+  document.getElementById("closed").style.opacity = 0;
 }
 // END OF CLOSE NOTIFICATION BAR //
 
@@ -116,11 +116,11 @@ for (i = 0; i < l; i++) {
 function closeAllSelect(elmnt) {
   /* A function that will close all select boxes in the document, except the current select box: */
   var x,
-    y,
-    i,
-    xl,
-    yl,
-    arrNo = [];
+  y,
+  i,
+  xl,
+  yl,
+  arrNo = [];
   x = document.getElementsByClassName("select-items");
   y = document.getElementsByClassName("select-selected");
   xl = x.length;
@@ -149,10 +149,10 @@ window.onload = function(){
     alert('Thank you! Your confirmation has been sent to your email and/or phone number.');
   }
   function messageFunction() {
-      alert('Thank you for your message! Homestay Inc. will reply to your message within three business days.');
+    alert('Thank you for your message! Homestay Inc. will reply to your message within three business days.');
   }
   function reviewFunction() {
-      alert('Thank you for your review! Homestay Inc. will reply to your review within three business days.');
+    alert('Thank you for your review! Homestay Inc. will reply to your review within three business days.');
   }
 
   const confirmationButton = document.getElementById("submit-confirmation");
