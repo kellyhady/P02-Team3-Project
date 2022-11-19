@@ -69,15 +69,22 @@
 
             <div class="block">
             <!-- // SEARCH INPUT //-->
-              <div id="search-block">
+            <form>
+              <div class="group" id="search-block">
                 <input
-                type="search"
+                class="floating-field"
                 id="search-input"
-                placeholder="What city are you looking for?"
+                type="search"
                 >
-                <button class="buttons" id="search-button">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="floating-label"
+                >Which city are you looking for?
+              </label>
+                <button class="buttons" id="search-button" type="submit">
                   Search
                 </button>
+                </form>
               </div>
 
               <!--// FILTER BUTTONS //-->
