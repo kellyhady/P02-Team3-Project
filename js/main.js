@@ -120,7 +120,7 @@ document.addEventListener("click", closeAllSelect);
 
 // POP-UP BOXES //
 document.getElementById("submit-email").onclick = function () {
-  alert("Your confirmation has been sent to your email and/or phone number.");
+  alert("Thank you! Your confirmation has been sent to your email and/or phone number.");
 };
 document.getElementById("submit-message").onclick = function () {
   alert("Thank you for your message! Homestay Inc. will reply to your message within three business days.");
