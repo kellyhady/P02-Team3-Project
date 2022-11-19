@@ -63,17 +63,13 @@
               <p>One of our 5-star listings is waiting for you!</p>
             </div>
           </div>
-          
+
           <div class="container">
             <div class="block">
             <form>
               <div class="group" id="search-block">
                 <input class="floating-field" id="search-input" type="search" required>
-                <!-- <span class="highlight"></span>
-                <span class="bar"></span> -->
-                <label class="floating-label"
-                >Which city are you looking for?
-              </label>
+                <label class="floating-label" >Which city are you looking for? </label>
                 <button class="buttons"
                 id="search-button"  type="submit" target="_blank">
                   Search
@@ -81,28 +77,24 @@
                 </form>
               </div>
 
-              <!--// FILTER BUTTONS //-->
               <div id="container">
-                <h4>Filter By City</h4>
+                <h4>Filter by City</h4>
                 <div id="filter-buttons">
-                  <button class="button-value" onclick="filterProduct('all')">
-                    All
+                  <button class="button-value filter-button all active" onclick="filterProduct('all')">
+                    ALL
                   </button>
-                  <button class="button-value" onclick="filterProduct('Vancouver')">
+                  <button class="button-value filter-button vancouver" onclick="filterProduct('vancouver')">
                     Vancouver
                   </button>
-                  <button class="button-value" onclick="filterProduct('Toronto')">
+                  <button class="button-value filter-button toronto" onclick="filterProduct('toronto')">
                     Toronto
-                  </button>
-                  <button class="button-value" onclick="filterProduct('Reset')">
-                    Reset
                   </button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="container">
+          <div class="container listings vancouver">
 
             <!-- // LISTING 1 // -->
             <div class="block vancouver">
@@ -135,7 +127,7 @@
             <!-- // END OF LISTING 2 // -->
           </div>
 
-          <div class="container">
+          <div class="container listings toronto">
             <!-- // LISTING 3 // -->
             <div class="block toronto">
               <h3>Single-Family Home in Toronto, OT</h3>
@@ -182,8 +174,6 @@
         <li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
       </ul>
       <a class="in-text" href="../style_guide.html">Style Guide</a>
-      <br>
-      <a class="in-text" href="../citations.html">Citations</a>
     </div>
   </footer>
   <!-- // END OF FOOOTER // -->

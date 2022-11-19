@@ -8,6 +8,32 @@ function closeFunction() {
 }
 // END OF CLOSE NOTIFICATION BAR //
 
+// FILTER LISTINGS //
+// Types of All, Vancouver, and Toronto
+function filterProduct(type) {
+  const listings = document.getElementsByClassName("listings");
+  const filterButtons = document.getElementsByClassName("filter-button");
+
+  // Containers For Filtering //
+  for (let i = 0; i < listings.length; i++) {
+    if (type !== "all" && !listings[i].classList.contains(type)) {
+      listings[i].style.display = "none";
+    } else {
+      listings[i].style.display = "flex";
+    }
+  }
+
+  // Make Appropriate Filter Button "Active" //
+  for (let j = 0; j < filterButtons.length; j++) {
+    if (!filterButtons[j].classList.contains(type)) {
+      filterButtons[j].classList.remove('active');
+    } else {
+      filterButtons[j].classList.add('active');
+    }
+  }
+}
+// END OF FILTER LISTINGS //
+
 // NAVIGATION BAR //
 const body = document.body;
 const header = document.querySelector("header");

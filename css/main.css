@@ -1054,33 +1054,33 @@ textarea {
 }
 
 #filter-buttons {
-  color: #ffffff;
-  border-radius: 5px;
+  color: #000;
+  font-weight: 600px;
   margin-top: 0.5em;
 }
 .button-value {
+  color: #000;
+  font-weight: 600px;
   display: inline-block;
   padding: 0.5em 2em;
-  margin: 0.5em;
-  border-radius: 20px;
-  color: #ffffff;
-  border: 1px solid black;
-  background-color: black;
+  margin-right: 1em;
+  border: none;
+  background-color: #FFF;
+  border: 2px solid #030303;
   cursor: pointer;
   transition: 0.1s all ease-in-out;
 }
 
 .button-value:hover {
-  color: #f5f5f5;
-  border: 1px solid #fa5a20;
-  background-color: #fa5a20;
-  transition: 0.1s all ease-in-out;
+  color: #000;
+  background-color: #f5f5f5;
+  transition: 0.2s all ease-in-out;
 }
 
-.button-value:active {
-  color: #ffffff;
-  border: 1px solid #cf4715;
-  background-color: #cf4715;
+.button-value:active, .filter-button.active {
+  color: #000;
+  background-color: #fa5a20;
+  transition: 0.2s all ease-in-out;
 }
 
 #update-images {
