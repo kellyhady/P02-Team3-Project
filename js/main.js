@@ -118,11 +118,15 @@ document.addEventListener("click", closeAllSelect);
 // END OF DROPDOWN FIELD //
 
 // POP-UP BOXES //
-document.getElementById('submit-confirmation').onclick = function(){
-    alert('Thank you! Your confirmation has been sent to your email and/or phone number.');
+document.getElementById("submit-confirmation").onclick = function() {confirmationFunction()};
+
+function confirmationFunction() {
+  alert('Thank you! Your confirmation has been sent to your email and/or phone number.');
 }
 
-document.getElementById('submit-message').onclick = function(){
+document.getElementById("submit-message").onclick = function() {messageFunction()};
+
+function mesaageFunction() {
     alert('Thank you! Your confirmation has been sent to your email and/or phone number.');
 }
 
