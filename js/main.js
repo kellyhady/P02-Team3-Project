@@ -126,11 +126,20 @@ function confirmationFunction() {
 
 document.getElementById("submit-message").onclick = function() {messageFunction()};
 
-function mesaageFunction() {
-    alert('Thank you! Your confirmation has been sent to your email and/or phone number.');
+function messageFunction() {
+    alert('Thank you for your message! Homestay Inc. will reply to your message within three business days.');
 }
 
-document.getElementById('submit-review').onclick = function(){
-    alert('Thank you for your review! Homestay Inc. will reply to your message within three business days.');
+document.getElementById("submit-review").onclick = function() {reviewFunction()};
+
+function reviewFunction() {
+    alert('Thank you for your review! Homestay Inc. will reply to your review within three business days.');
 }
+
+window.onload = function(){
+    confirmationFunction();
+    messageFunction();
+    reviewFunction();
+};
+
 // END OF POP-UP BOXES //

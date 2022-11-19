@@ -284,10 +284,9 @@ FLEXBOX STYLING - Échanger
 	/* END OF NAVIGATION BAR */
 
 	/* HERO */
-	body {
+	main {
 		overflow-x: hidden;
 	}
-
 	.hero-image-home {
 	  background-image: url("../img/background.jpg");
 	  max-width: 800px;
@@ -470,4 +469,17 @@ FLEXBOX STYLING - Échanger
 		margin-bottom: 20px;
 	}
 	/* END OF FOOTER */
+}
+
+/* BREAKPOINT 7 */
+@media (max-width:700px) {
+	.hero-image-home {
+	  background-image: url("../img/background.jpg");
+	  max-width: 700px;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  position: relative;
+		overflow: clip;
+	}
 }
