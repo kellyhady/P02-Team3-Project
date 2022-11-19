@@ -97,6 +97,16 @@ FLEXBOX STYLING - Échanger
 	background-color: #FFF;
 	border: 2px solid #030303;
 }
+
+.container .block-review h2 {
+	padding-bottom: 2rem;
+	margin-bottom: 2rem;
+	border-bottom: 2px solid #030303;
+}
+
+.container .block-review .quotation {
+	margin-top: -2em;
+}
 /* END OF CONTAINER BLOCKS */
 
 /* TABLE BLOCKS */
@@ -304,6 +314,7 @@ FLEXBOX STYLING - Échanger
 		-ms-flex: 1 1 15em;
 		flex: 1 1 15em;
 		margin: 0rem;
+		margin-bottom: 2rem;
 		background-color: transparent;
 	}
 	.container .block-transparent {
@@ -326,11 +337,22 @@ FLEXBOX STYLING - Échanger
 	.container .text-transparent {
 		margin-bottom: 2.5rem;
 	}
+	.container .block-review {
+		-webkit-flex: 1 1 15em;
+		-ms-flex: 1 1 15em;
+		flex: 1 1 15em;
+		margin: 0rem;
+		background-color: #FFF;
+	}
 	.container .block img {
 		max-width: 150px;
 		-webkit-flex: 3 1 auto;
 		-ms-flex: 3 1 auto;
 		flex: 3 1 auto;
+	}
+	.container .table-block h2 {
+		display: block;
+		font-size: 110%;
 	}
 	.container .table-block h4 {
 		display: block;
@@ -350,6 +372,9 @@ FLEXBOX STYLING - Échanger
 	/* ROW TITLES */
 	h2.number {
 		text-align: left;
+	}
+	h2.deposit {
+		text-align: right;
 	}
 	h3.entry {
 		text-align: left;

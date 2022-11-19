@@ -493,6 +493,10 @@ h2.number {
   text-align: right;
 }
 
+h2.deposit {
+  text-align: right;
+}
+
 h3.entry {
   text-align: left;
 }
