@@ -117,7 +117,7 @@ function closeAllSelect(elmnt) {
 document.addEventListener("click", closeAllSelect);
 // END OF DROPDOWN FIELD //
 
-// POP-UP BOXES //
+// POP-UP BOXES //window.onload = function(){
 window.onload = function(){
   function confirmationFunction() {
     alert('Thank you! Your confirmation has been sent to your email and/or phone number.');
@@ -128,9 +128,19 @@ window.onload = function(){
   function reviewFunction() {
       alert('Thank you for your review! Homestay Inc. will reply to your review within three business days.');
   }
-  document.getElementById("submit-confirmation").onclick = function() {confirmationFunction()};
-  document.getElementById("submit-message").onclick = function() {messageFunction()};
-  document.getElementById("submit-review").onclick = function() {reviewFunction()};
-};
 
+  const confirmationButton = document.getElementById("submit-confirmation");
+  const messageButton = document.getElementById("submit-message");
+  const reviewButton = document.getElementById("submit-review");
+
+  if (confirmationButton) {
+    confirmationButton.onclick = function() {confirmationFunction()};
+  }
+  if (messageButton) {
+    messageButton.onclick = function() {messageFunction()};
+  }
+  if (reviewButton) {
+    reviewButton.onclick = function() {reviewFunction()};
+  }
+};
 // END OF POP-UP BOXES //
