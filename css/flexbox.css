@@ -284,6 +284,16 @@ FLEXBOX STYLING - Échanger
 	/* END OF NAVIGATION BAR */
 
 	/* HERO */
+	.hero-image-home {
+		background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  position: relative;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	h1.hero {
 		font-size: 500%;
 		line-height: 110%;
@@ -370,10 +380,9 @@ FLEXBOX STYLING - Échanger
 	}
 	/* END OF CONTAINERS */
 
-	/* TEXT STYLING FOR CHECKOUT CART */
 	/* ROW TITLES */
 	h2.number {
-		text-align: left;
+		text-align: right;
 	}
 	h2.deposit {
 		text-align: right;
@@ -388,7 +397,7 @@ FLEXBOX STYLING - Échanger
 		text-align: left;
 	}
 	h3.total {
-		text-align: left;
+		text-align: right;
 	}
 	/* END OF ROW TITLES */
 
@@ -403,7 +412,7 @@ FLEXBOX STYLING - Échanger
 		text-align: left;
 	}
 	p.total {
-		text-align: left;
+		text-align: right;
 	}
 	/* END OF COLUMN CONTENTS */
 	/* END OF TEXT STYLING FOR CHECKOUT CART */
