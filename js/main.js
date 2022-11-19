@@ -128,11 +128,6 @@ window.onload = function(){
   function reviewFunction() {
       alert('Thank you for your review! Homestay Inc. will reply to your review within three business days.');
   }
-
-  document.getElementById("submit-confirmation").onclick = function() {popUpFunction()};
-  document.getElementById("submit-message").onclick = function() {popUpFunction()};
-  document.getElementById("submit-review").onclick = function() {popUpFunction()};
-
   document.getElementById("submit-confirmation").onclick = function() {confirmationFunction()};
   document.getElementById("submit-message").onclick = function() {messageFunction()};
   document.getElementById("submit-review").onclick = function() {reviewFunction()};
