@@ -284,6 +284,19 @@ FLEXBOX STYLING - Échanger
 	/* END OF NAVIGATION BAR */
 
 	/* HERO */
+	body {
+		overflow-x: hidden;
+	}
+
+	.hero-image-home {
+	  background-image: url("../img/background.jpg");
+	  max-width: 800px;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  position: relative;
+		overflow: clip;
+	}
 	h1.hero {
 		font-size: 500%;
 		line-height: 110%;
