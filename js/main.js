@@ -115,9 +115,17 @@ function closeAllSelect(elmnt) {
 
 /* If the user clicks anywhere outside the select box, then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
-
-document.getElementById("submit-email").onclick = function () {
-  alert("Check your inbox! Your booking details have been sent to your email.");
-};
-
 // END OF DROPDOWN FIELD //
+
+
+// POP-UP BOXES //
+document.getElementById("submit-email").onclick = function () {
+  alert("Your confirmation has been sent to your email and/or phone number.");
+};
+document.getElementById("submit-message").onclick = function () {
+  alert("Thank you for your message! Homestay Inc. will reply to your message within three business days.");
+};
+document.getElementById("submit-review").onclick = function () {
+  alert("Thank you for your review! Homestay Inc. will reply to your message within three business days.");
+};
+// END OF POP-UP BOXES //

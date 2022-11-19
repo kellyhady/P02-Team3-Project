@@ -284,16 +284,6 @@ FLEXBOX STYLING - Échanger
 	/* END OF NAVIGATION BAR */
 
 	/* HERO */
-	.hero-image-home {
-		background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  position: relative;
-		justify-content: center;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
 	h1.hero {
 		font-size: 500%;
 		line-height: 110%;
@@ -305,7 +295,7 @@ FLEXBOX STYLING - Échanger
 
 	/* CONTAINERS */
 	.content {
-		padding: 0rem 3rem 3rem 3rem;
+		padding: 3rem 3rem 3rem 3rem;
 	}
 	.element-white {
 	  background-color: #fff;
@@ -323,28 +313,26 @@ FLEXBOX STYLING - Échanger
 		-webkit-flex: 1 1 15em;
 		-ms-flex: 1 1 15em;
 		flex: 1 1 15em;
-		margin: 0rem;
-		margin-bottom: 2rem;
+		margin: 0rem 0rem 2rem 0rem;
 	}
 	.container .block-transparent {
 		-webkit-flex: 1 1 15em;
 		-ms-flex: 1 1 15em;
 		flex: 1 1 15em;
-		padding: 0 1rem;
-		padding: 0rem 0.125rem 0.125rem 0.125rem;
-		margin: 0rem;
+		padding: 0rem 0.125rem 3rem 0.125rem;
+		margin: 0rem 0rem 2rem 0rem;
 		background-color: transparent;
 	}
 	.container .block-transparent img {
 		margin-top: 0rem;
-		margin-bottom: 2.5rem;
+		margin-bottom: 0rem;
 		flex: 0 1 auto;
 		justify-content: center;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	.container .text-transparent {
-		margin-bottom: 2.5rem;
+		margin-bottom: 3rem;
 	}
 	.container .block-review {
 		-webkit-flex: 1 1 15em;
